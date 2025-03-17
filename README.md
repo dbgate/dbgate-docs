@@ -1,0 +1,2 @@
+# dbgate-docs
+DbGate documentation

@@ -1,0 +1,23 @@
+baseURL = 'https://dbgate.io/'
+languageCode = 'en-us'
+title = 'DbGate'
+disableKinds = ["taxonomy"]
+enableRobotsTXT = true
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.116.0"
+
+[pagination]
+  disableAliases = false
+  pagerSize = 50
+  path = 'page'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[sitemap]
+  exclude = ["purchase"]

@@ -1,0 +1,54 @@
+// *** thirdparty files
+$fa-font-path: '/fontawesome/';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
+
+@import '../../node_modules/simplelightbox/dist/simple-lightbox.min';
+
+// *** app files ***
+// @import 'functions';
+@import 'variables';
+// @import 'utilities';
+@import 'mixins';
+// @import 'overrides';
+
+// @import 'part/font-face-google-fonts';
+// @import 'part/font-face-google-fonts-roboto';
+@import 'base/bootstrap';
+
+@import 'base/general';
+@import 'base/layout';
+
+// @import "part/loading-spinner";
+// @import "part/modal";
+// @import 'part/switcher';
+// @import 'part/cookies-consent';
+@import 'part/top';
+@import 'part/navigation';
+@import 'part/page';
+// @import 'part/breadcrumb';
+@import 'part/bottom';
+@import 'part/footer';
+
+// @import 'part/top-carousel';
+@import 'part/block';
+@import 'part/form';
+
+@import 'part/content';
+@import 'part/content-home';
+// @import 'part/content-page';
+
+// @import 'part/blog-posts-page';
+// @import 'part/blog-sidebar';
+// @import "part/toastr";
+
+// woocommerce
+// @import 'woocommerce/_parts';
+
+@import 'part/404';
+
+// @import 'part/dark-mode';
+
+@import 'base/shame';

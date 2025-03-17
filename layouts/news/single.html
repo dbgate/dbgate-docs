@@ -1,0 +1,13 @@
+{{ define "main" }}
+
+<div class="block-item block-intro content-main" data-section="news">
+    <div class="block-container container">
+        <h2 class="heading-decor">{{.Params.title}}</h2>
+        <p class="text-light">
+            Published: {{ .Date.Format "2006-01-02" }}
+        </p>
+        {{ .Content }}
+    </div>
+</div>
+
+{{ end }}

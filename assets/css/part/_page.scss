@@ -1,0 +1,25 @@
+.page {
+  display: flex;
+  flex-direction: column;
+}
+.page .page-in {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100vh;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.content-area {
+  // display: flex;
+  // flex-direction: column;
+  // flex-grow: 1;
+  display: block;
+}
+
+.content-area .site-content-main {
+  flex-grow: 1;
+}
+
+.site-footer {
+}

@@ -1,0 +1,179 @@
+/*
+2022 (c) azre.xyz
+version 0.1.3|20220107
+MIT licence or Apache licence 2
+- basically free for use
+- leave note of copyright would be appreciated, thanks
+
+checkbox-toggle
+- design html input checkbox `<input type="checkbox">` with some html elements
+- code only CSS based (no JS)
+- customizable CSS (SASS)
+
+-------------------------------------------------------------------------------
+html template:
+-------------------------------------------------------------------------------
+<label class="checkbox-toggle">
+  <input type="checkbox" value="1">
+  <span class="cbt-container">
+    <span class="cbt-bar">
+        <span class="cbt-btn"></span>
+    </span>
+  </span>
+</label>
+-------------------------------------------------------------------------------
+*/
+
+/// checkbox-toggle
+// - whole solution is based on relative sizing
+// - keep "em" length units type (if no note)
+// -
+
+// checkbox-toggle - basic coloring
+$color-toggle: $color-primary;
+$color-light: $color-white;
+$checkbox-toggle-bar-bg: $color-light; // lighten($color-toggle, 25%);
+$checkbox-toggle-bar-border: $color-secondary;
+$checkbox-toggle-bar-bg-a: $color-secondary;
+$checkbox-toggle-bar-border-a: $color-secondary;
+$checkbox-toggle-btn-bg: $color-light;
+$checkbox-toggle-btn-border: $color-secondary;
+$checkbox-toggle-btn-bg-a: $color-light;
+$checkbox-toggle-btn-border-a: $color-secondary;
+// checkbox-toggle - container settings
+$checkbox-toggle-container-font-size: 1.2em; //recommended "inherit"
+$checkbox-toggle-container-padding-side: 0.1em;
+// checkbox-toggle - bar settings
+$checkbox-toggle-bar-width: 2em;
+$checkbox-toggle-bar-height: 1em;
+$checkbox-toggle-bar-border-width: 0.05em;
+$checkbox-toggle-bar-border-radius: 1em;
+// checkbox-toggle - btn settings
+$checkbox-toggle-btn-size: 1em;
+$checkbox-toggle-btn-border-width: 0.05em; //could be any unit
+$checkbox-toggle-btn-border-radius: 50%;
+// checkbox-toggle - some math/calculations
+$checkbox-toggle-container-width: (
+  $checkbox-toggle-bar-width + (2 * $checkbox-toggle-container-padding-side)
+);
+$checkbox-toggle-btn-vertical: -((
+        $checkbox-toggle-btn-size -
+          ($checkbox-toggle-bar-height - (2 * $checkbox-toggle-bar-border-width))
+      ) / 2);
+$checkbox-toggle-btn-translate-left: (
+  -$checkbox-toggle-bar-border-width + $checkbox-toggle-btn-border-width - ($checkbox-toggle-container-padding-side /
+        2)
+);
+$checkbox-toggle-btn-translate-right: (
+  $checkbox-toggle-bar-width - $checkbox-toggle-btn-size - $checkbox-toggle-bar-border-width * 2 +
+    ($checkbox-toggle-container-padding-side / 2)
+);
+
+//checkbox-toggle - example colors for variants
+// $color-default: $color-secondary;
+// $checkbox-toggle-default-bar-bg: lighten($color-default, 25%);
+// $checkbox-toggle-default-bar-bg-a: darken($color-default, 25%);
+
+/* --- checkbox-toggle --- */
+.checkbox-toggle {
+  position: relative;
+  margin: 0;
+  white-space: nowrap;
+  font-size: 1em;
+  vertical-align: middle;
+  cursor: pointer;
+
+  &.checkbox-toggle-sm {
+    font-size: 0.8rem;
+  }
+  &.checkbox-toggle-lg {
+    font-size: 2rem;
+  }
+}
+.checkbox-toggle input[type='checkbox'] {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  & + .cbt-container {
+    display: inline-block;
+    position: relative;
+    width: $checkbox-toggle-container-width;
+    font-size: $checkbox-toggle-container-font-size;
+    padding: 0em $checkbox-toggle-container-padding-side;
+    margin-top: -0.1em;
+    background: transparent;
+    vertical-align: middle;
+  }
+  & + .cbt-container .cbt-bar {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: $checkbox-toggle-bar-height;
+    border-width: $checkbox-toggle-bar-border-width;
+    border-style: solid;
+    border-color: $checkbox-toggle-bar-border;
+    border-radius: $checkbox-toggle-bar-border-radius;
+    background: $checkbox-toggle-bar-bg;
+    transition: all 0.3s ease 0.15s;
+  }
+  & + .cbt-container .cbt-bar .cbt-btn {
+    display: block;
+    position: absolute;
+    top: $checkbox-toggle-btn-vertical;
+    left: 0;
+    z-index: 3;
+    width: $checkbox-toggle-btn-size;
+    height: $checkbox-toggle-btn-size;
+    border-width: $checkbox-toggle-btn-border-width;
+    border-style: solid;
+    border-color: $checkbox-toggle-btn-border;
+    border-radius: $checkbox-toggle-btn-border-radius;
+    background: $checkbox-toggle-btn-bg;
+    transform: translate($checkbox-toggle-btn-translate-left, 0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease 0.1s;
+  }
+
+  &:active + .cbt-container .cbt-bar .cbt-btn {
+    box-shadow: 0 0 0 0.5em rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+  }
+  &:checked + .cbt-container .cbt-bar {
+    border-color: $checkbox-toggle-bar-border-a;
+    background: $checkbox-toggle-bar-bg-a;
+  }
+  &:checked + .cbt-container .cbt-bar .cbt-btn {
+    transform: translate($checkbox-toggle-btn-translate-right, 0);
+  }
+  &:disabled + .cbt-container {
+    opacity: 0.6;
+  }
+}
+/* checkbox-toggle - invert toggle position */
+.checkbox-toggle.checkbox-toggle-invert input[type='checkbox'] {
+  & + .cbt-container .cbt-bar .cbt-btn {
+    transform: translate($checkbox-toggle-btn-translate-right, 0);
+  }
+  &:checked + .cbt-container .cbt-bar .cbt-btn {
+    transform: translate($checkbox-toggle-btn-translate-left, 0);
+  }
+}
+
+/* checkbox-toggle - color change example */
+.checkbox-toggle.checkbox-toggle-primary input[type='checkbox'] {
+  & + .cbt-container {
+  }
+  & + .cbt-container .cbt-bar {
+    background: $color-primary;
+  }
+  & + .cbt-container .cbt-bar .cbt-btn {
+  }
+  &:checked + .cbt-container .cbt-bar {
+    background: $color-dark;
+  }
+  &:checked + .cbt-container .cbt-bar .cbt-btn {
+  }
+}
+/* --- checkbox-toggle - END --- */

@@ -1,0 +1,13 @@
+/*
+prefers-color-scheme:
+ - light
+ - dark
+*/
+@media (prefers-color-scheme: dark) {
+  // body { background: black; }
+}
+
+@include prefered-color-scheme('dark') {
+  body {
+  }
+}

@@ -22,3 +22,6 @@ theme = "hugo-theme-relearn"
 
 [sitemap]
   exclude = ["purchase"]
+
+[params]
+  themeVariant = 'dbgate'

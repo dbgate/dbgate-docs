@@ -4,8 +4,6 @@ title: API documentation
 weight: 21
 ---
 
-# API Documentation
-
 ## Functions
 
 <dl>

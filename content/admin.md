@@ -4,14 +4,13 @@ title: Adminstration (Premium)
 weight: 11
 ---
 
-# Administration
-Administration tool is available only on Premium edition. In Community edition, please use configuration using [environment variables](/docs/env-variables)
+Administration tool is available only on Premium edition. In Community edition, please use configuration using [environment variables](/img/env-variables)
 
 Administration tool is still in development, so there could be some backward incompatible changes till September release.
 
 Administration page is available on URL https://your_dbgate_instance/admin.html . You have to set environment variable ADMIN_PASSWORD to enable this administration. You could then add administration permission to different user with different authentication method, but at first, you have to open this admin page.
 
-All configuration from administration is saved into database, use [STORAGE_xxx environment  variables](/docs/env-variables) for configure this.
+All configuration from administration is saved into database, use [STORAGE_xxx environment  variables](/img/env-variables) for configure this.
 
 ## Authentication tab
 ![screenshot](/screenshots/authadmin.png)

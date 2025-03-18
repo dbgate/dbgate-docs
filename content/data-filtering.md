@@ -8,7 +8,7 @@ DbGate has powerful data filtering engine, allowing both very easy data filterin
 
 Data filters can used in many places in DbGate, but the most common place is filtering data grid.
 
-![screenshot](/docs/filter.png)
+![screenshot](/img/filter.png)
 
 1. Write filter here. It could be text, which is searched in given column. If it is green, filter is correctly typed.
 2. If red, there is error in filter and filter is  ignored.

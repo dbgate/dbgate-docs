@@ -4,7 +4,6 @@ title: Environment variables
 weight: 6
 ---
 
-# Environment variables
 Configuration via environment variables could be used in docker containers, also when using npm package. NPM package supports .env files.
   * [dbgate-serve](https://www.npmjs.com/package/dbgate-serve) - NPM package for Community edition
   * [dbgate-serve-premium](https://www.npmjs.com/package/dbgate-serve-premium) - NPM package for Premium edition

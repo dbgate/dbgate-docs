@@ -10,7 +10,7 @@ DbGate has flexible export/import system based on plugins and [nodejs streams](h
 This window is main place when export/import jobs are defined. It can be opened from menu context menus Import/Export, with prefilled default values.
 
 
-![screenshot](/docs/impexp.png)
+![screenshot](/img/impexp.png)
 
 1. Source configuration. Can be files to import (CSV, XML, JSON) or database
 2. Target configuration. CHoose storage, or use buttons to fill current DB or archive

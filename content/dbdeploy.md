@@ -6,7 +6,6 @@ weight: 7
 
 *Deploy functionality will be significantly changed in incoming release, this documentation is related to lastest BETA version*
 
-# Database deploy
 DbGate offers mechanism for automatic database deploy. While traditional way to achieve this uses migration SQL scripts, DbGate uses different way by default (migration scripts are also support). 
 You define DB model with YAML files describing table structure and list data, and SQL files describing views, stored procedures and functions. This model is deployed to database, comparing current structure with structure in model, create missing columns and tables abnd update view and procedure definitions. **No destructive actions** (which could lead to data loss) are performed, so when you remove column or table from model, it remains in database. If you rename column in model, new column with new name is created and old column remains in in database.
 
@@ -74,9 +73,9 @@ DbGate uses table `dbgate_deploy_journal` for tracking of deploy scripts deploye
     - Shell: Deploy DB - generates JavaScript shell, which could be used for deploying DB
     - Compare with {current database} - graphically compares current database with model (Premium only)
 
-![screenshot](/docs/exportdbmodel.png)
+![screenshot](/img/exportdbmodel.png)
 
-![screenshot](/docs/archive-model.png)
+![screenshot](/img/archive-model.png)
 
 ### Usage from command line
 Copy following script into file deploy.js and update database configuration. Also you should change modelFolder, according to you model folder location.  

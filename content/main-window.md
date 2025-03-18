@@ -2,8 +2,6 @@
 layout: docs
 title: Main window
 weight: 1
-aliases:
-  - /docs/
 ---
 
 DbGate is cross-platform SQL+noSQL database client.
@@ -11,7 +9,7 @@ DbGate is cross-platform SQL+noSQL database client.
 
 ## Main window
 DbGate can have multiple database connections opened simltaneously. But it works with current database, which is indicated on status bar (17)
-![Main window](/docs/main.png)
+![Main window](/img/main.png)
 
 1. Create new query button
 2. Toolbar, buttons relative to current tab.

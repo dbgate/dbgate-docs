@@ -1,5 +1,14 @@
 @import "theme-relearn-light.css";
 
 :root {
-  --PRIMARY-color: #888;
+    --PRIMARY-color: #888;
+}
+
+#R-header-wrapper {
+    background-color: #f8f8f8;
+    background-image: linear-gradient(to right, #73b6de , #b97cd0);
+}
+
+#R-homelinks {
+    background-image: linear-gradient(to right, #73b6de , #b97cd0);
 }

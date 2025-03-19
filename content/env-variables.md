@@ -1,5 +1,4 @@
 ---
-layout: docs
 title: Environment variables
 weight: 6
 ---

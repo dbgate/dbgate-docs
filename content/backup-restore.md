@@ -1,5 +1,4 @@
 ---
-layout: docs
 title: Backup & restore (Premium)
 weight: 15
 ---

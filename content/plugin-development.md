@@ -1,5 +1,4 @@
 ---
-layout: docs
 title: Plugin development
 weight: 10
 ---

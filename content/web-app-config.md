@@ -1,5 +1,4 @@
 ---
-layout: docs
 title: Web app config samples
 weight: 10
 ---

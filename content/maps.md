@@ -1,5 +1,4 @@
 ---
-layout: docs
 title: Maps
 weight: 8
 ---

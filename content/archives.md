@@ -1,5 +1,4 @@
 ---
-layout: docs
 title: Archives
 weight: 4
 ---

@@ -1,5 +1,4 @@
 ---
-layout: docs
 weight: 20
 ---
 

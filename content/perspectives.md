@@ -1,5 +1,4 @@
 ---
-layout: docs
 title: Perspectives
 weight: 9
 ---

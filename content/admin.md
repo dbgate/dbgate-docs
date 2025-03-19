@@ -1,5 +1,4 @@
 ---
-layout: docs
 title: Adminstration (Premium)
 weight: 11
 ---

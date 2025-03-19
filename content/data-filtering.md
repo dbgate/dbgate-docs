@@ -81,5 +81,5 @@ Text compare is case insensitive.
 - TRUE, true, 1 - column value is true/1
 - FALSE, false, 0 - column value is false/0
 
-### Combinarions of filters
+### Combinations of filters
 Filter can be combined together. Space is interpreted as AND operator, comma as OR operator. AND has higher priority than OR.

@@ -12,10 +12,20 @@ Windows supports msi installer and portable ZIP installation. Autoupdater is sup
 Linux supports snap packages and AppImage distribution. Both supports autoupdate (SNAP supports it natively)
 
 ## Mac
-For Mac, DMG installer is available. You must manually confirm validity, as Mac package is not signed.
+For Mac, DMG installer is available. There are 3 packages available:
+  - Apple (arm64) for new Apple M1, M2, M3, M4 processor
+  - Intel (x86) - for old x86 processors
+  - Apple+Intel - both packages in onw installer
+
 
 ## Docker 
-Follow instucions on [docker hub](https://hub.docker.com/r/dbgate/dbgate)
+Follow instructions on [docker hub](https://hub.docker.com/r/dbgate/dbgate)
 
 ## NPM
 You could also install web version of DbGate from NPM, please follow instructions on [npmjs](https://www.npmjs.com/package/dbgate-serve)
+
+## Amazon (AWS)
+Open [DbGate on Amazon marketplace](https://aws.amazon.com/marketplace/pp/prodview-glw7okfnhf4cy). We recommend t2.medium instance type for best user experience, but t2.micro available in free tier will be enough for small number of users.
+
+## Azure
+Open [DbGate on Azure marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/sprinxsystemsas1582034211947.dbgate_azure_vm?tab=Overview). We recommend virtual machines with 2 GB RAM.

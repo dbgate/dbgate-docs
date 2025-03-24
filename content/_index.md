@@ -10,7 +10,7 @@ DbGate is database manager, allowing to connect and work with supported database
 
 ## Supported databases
 
-| Database | Community | Premium | Extra Features |
+| Database | {{< center "Community" >}} | {{< center "Premium" >}} | Extra Features |
 |---|---|---|---|
 | [MySQL](https://www.mysql.com/) | {{< check >}}  | {{< check >}} | Backup, Restore |
 | [PostgreSQL](https://postgresql.org/) | {{< check >}}  | {{< check >}} | Backup, Restore |

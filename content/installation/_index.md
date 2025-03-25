@@ -27,5 +27,9 @@ You could also install web version of DbGate from NPM, please follow instruction
 ## Amazon (AWS)
 Open [DbGate on Amazon marketplace](https://aws.amazon.com/marketplace/pp/prodview-glw7okfnhf4cy). We recommend t2.medium instance type for best user experience, but t2.micro available in free tier will be enough for small number of users.
 
+[More about AWS](aws)
+
 ## Azure
 Open [DbGate on Azure marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/sprinxsystemsas1582034211947.dbgate_azure_vm?tab=Overview). We recommend virtual machines with 2 GB RAM.
+
+[More about Azure](azure)

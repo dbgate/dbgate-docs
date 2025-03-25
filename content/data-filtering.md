@@ -1,6 +1,6 @@
 ---
 title: Data filtering
-weight: 2
+weight: 20
 ---
 
 DbGate has powerful data filtering engine, allowing both very easy data filtering or complex conditions.

@@ -1,6 +1,6 @@
 ---
 title: Adminstration
-weight: 11
+weight: 110
 ---
 
 Administration tool is available only on Premium edition. In Community edition, please use configuration using [environment variables](/img/env-variables)

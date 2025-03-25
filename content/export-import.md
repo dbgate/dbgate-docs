@@ -1,6 +1,6 @@
 ---
 title: Export & import
-weight: 2
+weight: 20
 ---
 
 DbGate has flexible export/import system based on plugins and [nodejs streams](https://nodejs.org/api/stream.html).

@@ -1,6 +1,6 @@
 ---
 title: Environment variables
-weight: 6
+weight: 60
 ---
 
 Configuration via environment variables could be used in docker containers, also when using npm package. NPM package supports .env files.

@@ -1,6 +1,6 @@
 ---
 title: Database deploy
-weight: 7
+weight: 70
 ---
 
 *Deploy functionality will be significantly changed in incoming release, this documentation is related to lastest BETA version*

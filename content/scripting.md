@@ -1,6 +1,6 @@
 ---
 title: Scripting
-weight: 20
+weight: 200
 ---
 
 DbGate consists of several [NPM packages](https://www.npmjs.com/search?q=keywords%3Adbgate), which could be used in nodejs scripts

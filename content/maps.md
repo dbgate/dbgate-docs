@@ -1,6 +1,6 @@
 ---
 title: Maps
-weight: 8
+weight: 80
 ---
 
 DbGate supports showing geographic data in maps. 

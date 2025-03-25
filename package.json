@@ -1,15 +1,11 @@
 {
   "dependencies": {
-    "@fortawesome/fontawesome-free": "6.7.2",
-    "bootstrap": "5.3.3",
-    "@popperjs/core": "2.11.8",
-    "jquery": "3.7.1",
-    "simplelightbox": "2.14.3"
+    "@mdi/font": "^7.1.96"
   },
   "devDependencies": {
     "copyfiles": "^2.4.1"
   },
   "scripts": {
-    "postinstall": "copyfiles -u 4 \"node_modules/@fortawesome/fontawesome-free/webfonts/*.*\" \"static/fontawesome\" && copyfiles -u 3 \"node_modules/jquery/dist/jquery.min.js\" \"static/minjs\" && copyfiles -u 5 \"node_modules/@popperjs/core/dist/umd/popper.min.js\" \"static/minjs\" && copyfiles -u 4 \"node_modules/bootstrap/dist/js/bootstrap.min.js\" \"static/minjs\" && copyfiles -u 3 \"node_modules/simplelightbox/dist/simple-lightbox.jquery.min.js\" \"static/minjs\""
+    "postinstall": "copyfiles -u 4 \"node_modules/@mdi/font/css/materialdesignicons.css\" \"static/mdi/css\" && copyfiles -u 4 \"node_modules/@mdi/font/fonts/*.*\" \"static/mdi/fonts\""
   }
 }

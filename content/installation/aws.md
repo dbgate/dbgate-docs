@@ -10,7 +10,7 @@ edition: 'premium'
 
 DbGate AWS edition is a collaborative, multi-user web platform specifically designed for database management within Amazon Web Services (AWS). By taking advantage of AWS infrastructure, it streamlines teamwork for organizations operating in cloud environments. Its shared, browser-based interface simplifies collaboration, data access, and database oversight while seamlessly integrating with AWS.
 
-[DbGate on AWS](https://aws.amazon.com/marketplace/pp/prodview-glw7okfnhf4cy)
+{{< button href="https://aws.amazon.com/marketplace/pp/prodview-glw7okfnhf4cy" style="blue" icon="fa-solid fa-arrow-up-right-from-square" >}}DbGate on AWS{{< /button >}}
 
 ## DbGate AWS key features
 DbGate AWS supports the same features as DbGate Team Premium, but is optimalized for AWS
@@ -38,4 +38,4 @@ DbGate AWS has it's special build and runs directly virtual server in EC2 (there
 
 If you create manually new EC2 container with new version, it will have its new database (internal MySQL database is part of container), so there is no simple way of moving connections and users to new EC2 container.
 
-[DbGate on AWS](https://aws.amazon.com/marketplace/pp/prodview-glw7okfnhf4cy)
+{{< button href="https://aws.amazon.com/marketplace/pp/prodview-glw7okfnhf4cy" style="blue" icon="fa-solid fa-arrow-up-right-from-square" >}}DbGate on AWS{{< /button >}}

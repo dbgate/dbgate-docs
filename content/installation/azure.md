@@ -5,7 +5,8 @@ weight: 14
 
 DbGate Azure edition is a collaborative, multi-user web platform specifically designed for database management within Azure. By taking advantage of Azure infrastructure, it streamlines teamwork for organizations operating in cloud environments. Its shared, browser-based interface simplifies collaboration, data access, and database oversight while seamlessly integrating with Azure.
 
-[DbGate on Azure](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/sprinxsystemsas1582034211947.dbgate_azure_vm?tab=Overview)
+{{< button href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/sprinxsystemsas1582034211947.dbgate_azure_vm?tab=Overview" style="blue" icon="fa-solid fa-arrow-up-right-from-square" >}}DbGate on Azure{{< /button >}}
+
 
 ## DbGate Azure key features
 DbGate Azure supports the same features as DbGate Team Premium, but is optimalized for Azure
@@ -33,4 +34,4 @@ DbGate Azure has it's special build and runs directly virtual server (there is n
 
 If you create manually new virtual machine with new version, it will have its new database (internal MySQL database is part of virtual machine), so there is no simple way of moving connections and users to new virtual machine.
 
-[DbGate on Azure](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/sprinxsystemsas1582034211947.dbgate_azure_vm?tab=Overview)
+{{< button href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/sprinxsystemsas1582034211947.dbgate_azure_vm?tab=Overview" style="blue" icon="fa-solid fa-arrow-up-right-from-square" >}}DbGate on Azure{{< /button >}}

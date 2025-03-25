@@ -1,9 +1,7 @@
 ---
-title: Backup & restore (Premium)
+title: Backup & restore
 weight: 15
 ---
-
-**This feature is not yet released**
 
 DbGate uses native tools for backup and restore your databases. This functionality is exclusive for Premium editions.
 

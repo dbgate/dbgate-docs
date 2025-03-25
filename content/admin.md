@@ -1,5 +1,5 @@
 ---
-title: Adminstration (Premium)
+title: Adminstration
 weight: 11
 ---
 

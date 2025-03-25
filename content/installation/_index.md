@@ -1,6 +1,6 @@
 ---
 title: Installation
-weight: 5
+weight: 1
 ---
 
 DbGate is available for various platforms, installation process is dependend on platform.

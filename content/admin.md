@@ -12,7 +12,7 @@ Administration page is available on URL https://your_dbgate_instance/admin.html 
 All configuration from administration is saved into database, use [STORAGE_xxx environment  variables](/img/env-variables) for configure this.
 
 ## Authentication tab
-![screenshot](/screenshots/authadmin.png)
+![screenshot](/screenshots/authentication-administration.png)
 
 There are several methods of authentication. Use will choose authentication method on login page. If you have only one authentication method enabled and authentication method doesn't require login page, login page is skipped.
 
@@ -27,7 +27,7 @@ There are several methods of authentication. Use will choose authentication meth
 For external identity providers, user doesn't have to exist in DbGate storage database. If this checkbox is checked, user, which is not found in storage database, is not allowed to login
 
 ## Connections tab
-![screenshot](/screenshots/connadmin.png)
+![screenshot](/screenshots/connection-administration.png)
 
 Configure connections available in DbGate. Connections must be mapped to users and roles to be available.
 
@@ -58,5 +58,5 @@ One hiearchy dimension is inheritance of permissions from roles.
 The second hiearchy dimension is inheritance from parent roles.
 
 Coul can see permission tree on following screenshot:
-![screenshot](/screenshots/roleadmin.png)
+![screenshot](/screenshots/role-administration.png)
 

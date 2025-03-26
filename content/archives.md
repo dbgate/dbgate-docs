@@ -19,7 +19,7 @@ You could open JSONL files in different modes:
 ## Data duplicator
 Data duplicator is feature, which allows importing related data in data archives into SQL database. It could be started from data archive context menu, choose "Data duplicator". This menu is visible only when you have selected current database. Data duplicator then shows you settings for duplicating your archive.
 
-![DbGate data duplicator screenshot](https://media.dbgate.io/img/dataduplicator-light.png)
+![DbGate data duplicator screenshot](https://media.dbgate.io/img/data-duplicator-light.png)
 
 Operations supported:
 - Copy row - insert new row into database from data archive. Autoincrement id is used for references to this table.,

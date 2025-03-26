@@ -7,7 +7,7 @@ DbGate has powerful data filtering engine, allowing both very easy data filterin
 
 Data filters can used in many places in DbGate, but the most common place is filtering data grid.
 
-![filter screenshot](https://media.dbgate.io/img/filter-light.png)
+![filter screenshot](https://media.dbgate.io/img/data-browser-filter-light.png)
 
 Filters are filled with background:
 * Green background - filter is correct and is applied

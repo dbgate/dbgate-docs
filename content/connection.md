@@ -10,7 +10,7 @@ Connecting to your database from DbGate is easy. You can connect to a database i
 * Menu File/Open - you could open existing SQLite database
 
 ## Connection screen
-![Connection screen](https://media.dbgate.io/img/connection-light.png)
+![Connection screen](https://media.dbgate.io/img/new-connection-light.png)
 
 Fields in connection screen highly depends on Connection type.
 
@@ -36,7 +36,7 @@ Common fields:
 * Use SSH tunnel - check to use SSH tunnel
 * Host - SSH server host name
 
-![DbGate - SSH tunnel configuration](https://media.dbgate.io/img/fragment-connection-sshtunnel-light.png)
+![DbGate - SSH tunnel configuration](https://media.dbgate.io/img/connection-sshtunnel-window-light.png)
 
 ## SSL
 Configure SSL connection.
@@ -44,5 +44,4 @@ Configure SSL connection.
 Common fields:
 * Use SSL - check to use SSL. In most cases, this is only you have to configure to use SSL
 
-![DbGate - SSL connection configuration](https://media.dbgate.io/img/fragment-connection-ssl-light.png)
-
+![DbGate - SSL connection configuration](https://media.dbgate.io/img/connection-ssl-window-light.png)

@@ -25,7 +25,7 @@ Advanced export/import could be invoked from:
 - database context menu, choose "Export" or "Import"
 
 
-![screenshot](https://media.dbgate.io/img/exportcsv-light.png)
+![screenshot](https://media.dbgate.io/img/configure-export-csv-light.png)
 
 ### {{<mdi "import" >}} Source configuration
 * Storage type - choose source of data

@@ -19,7 +19,7 @@ STORAGE_ENGINE: mysql@dbgate-plugin-mysql
 ADMIN_PASSWORD: <Admin password>
 ```
 
-![screenshot](/screenshots/authadmin.png)
+![screenshot](/screenshots/authentication-administration.png)
 
 ## More database connections, public access (Community/Premium)
 This configuration is used in [DbGate demo app](https://demo.dbgate.org)

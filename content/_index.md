@@ -6,7 +6,7 @@ title: DbGate documentation
 
 DbGate is database manager, allowing to connect and work with supported databases. It is both desktop app and web app. It's designed to by fast and easy to use.
 
-![DbGate screenshot](https://media.dbgate.io/img/datagrid-light.png)
+![DbGate screenshot](https://media.dbgate.io/img/common-data-browser-light.png)
 
 ## Supported databases
 

@@ -3,25 +3,51 @@ title: Export & import
 weight: 20
 ---
 
-DbGate has flexible export/import system based on plugins and [nodejs streams](https://nodejs.org/api/stream.html).
+DbGate has flexible export/import system allowing both simple one-click exports or complex custom setup.
 
-## Import / export modal
-This window is main place when export/import jobs are defined. It can be opened from menu context menus Import/Export, with prefilled default values.
+## Simple one-click export
+
+If you don't need any configuration, you just need to export data to file, you could use simple export. There are several ways, how to invoke simple export:
+- Table/view/collection context menu, Export
+- Table data, "Export" context menu or {{<mdi "export" >}} button. Filters are applied also to exported data
+- Query result, "Export" context menu or {{<mdi "export" >}} button
+
+In desktop application, you could directly save exported file.
+
+I web app, exported file is offered for download.
+
+## Advanced export/import
+If you need to configure more details or export more tables in one stop, you need to use "Advanced export".  
+The same configuration tool is used for importing, just wityh exchanged source and target configuration.
+
+Advanced export/import could be invoked from:
+- the same places as Simple export, just instead of file format choose "Export advanced..."
+- database context menu, choose "Export" or "Import"
 
 
-![screenshot](/img/impexp.png)
+![screenshot](https://media.dbgate.io/img/exportcsv-light.png)
 
-1. Source configuration. Can be files to import (CSV, XML, JSON) or database
-2. Target configuration. CHoose storage, or use buttons to fill current DB or archive
-3. Choose source tables or views, you could add multiple export sources fron one database
-4. Set output file names for exported tables. (or when importing into table, you can change improted table name)
-5. Start import/export process
-6. Generate script. Under the hood, all jobs are at first compiled into scripts and than executed. You could use this, if you want to manually edit generated script
-7. Output files. Export files are generated into temporary folder, you can save exported files to your preffered location. This menu differs slightly for web version.
-8. Message log of export/import process 
+### {{<mdi "import" >}} Source configuration
+* Storage type - choose source of data
+  * Database - then you configure "Export"
+    * Select multiple source tables
+  * File (JSON, CSV, DBF...) - then you configure "Import"
+    * Open or drag & drop source file
+  * Query - in most cases, you will not need this, but you could type query directly here. This option is internally used, when you are exporting eg. filtered table data.
+  * Archive - import/export data from [data archive](archives)
 
-## Quick export
-Sometimes, described window is unnecessarily complex. If you want export table/query result/anything into single file, without configuring any options, there is command "Quick export" in context menu. You choose only format and than output file. Also no intermediate folder is used, data are exported directly to output file. This option is available only for classic (electron) app, not for web app.
+### {{<mdi "export" >}} Target configuration
+* Storage type - the same as for source configuration, but with opposite meaning
+  * Database - you configure "Import"
+  * File (JSON, CSV, DBF...) - you configure "Export"
+
+### {{< mdi "table-multiple" >}} Map source tables/files
+You could map, how input files/tables are transformed to output
+
+### Action buttons
+  * {{< mdi "play" >}} Run - runs defined import/export job
+  * {{< mdi "flash" >}} Generate script - creates JavaScript code running defined job. You could run in it DbGate shell console, or you could export it to file and run it from command-line with nodejs
+  * {{< mdi "content-save" >}} Save - saves job for later
 
 ## Import / export scripts
 All import/export jobs in DbGate are at first transpiled into scripts. Follows example of exporting SQLite table into CSV.

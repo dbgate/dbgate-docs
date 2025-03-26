@@ -3,7 +3,7 @@ title: Archives
 weight: 40
 ---
 
-Archives or simply folders with data in JSONL (NDJSON) format.
+Archives are folders with data in JSONL (NDJSON) format. DbGate allows work with them very efficiently, you could import them into database, export them to other formats or directly edit data in archive. Archive behaves as a very fast and lighweight database stored in local files.
 
 ## JSONL format
 DbGate uses JSONL format internally everywhere. JSONL is text file, where every line contains JSON stringified row. DbGate assumes, that first line could contain header (also as JSON), with table structure. When you use JSONL with dynamic structure (without first fixed line), this format is standardized and could be loaded into many other tools. 
@@ -19,7 +19,7 @@ You could open JSONL files in different modes:
 ## Data duplicator
 Data duplicator is feature, which allows importing related data in data archives into SQL database. It could be started from data archive context menu, choose "Data duplicator". This menu is visible only when you have selected current database. Data duplicator then shows you settings for duplicating your archive.
 
-![screenshot](/screenshots/data-duplicator.png)
+![DbGate data duplicator screenshot](https://media.dbgate.io/img/dataduplicator-light.png)
 
 Operations supported:
 - Copy row - insert new row into database from data archive. Autoincrement id is used for references to this table.,
@@ -27,4 +27,6 @@ Operations supported:
 - Insert if not exists - combination of preceding tow options. Lookup, it no row is matched, copy row
 
 ## Archives and DB models
-Archive folders are also used as storage for DB models. This feature is in experimental state yet. You could export DB model in database context menu, "Export DB model - experimental". You could than edit this model (YAML files for table structure, SQL files for views and stored procedures), compare it with real database and deploy it into database
+Archive folders are also used as storage for DB models. You could export DB model in database context menu, "Export DB model". You could than edit this model (YAML files for table structure, SQL files for views and stored procedures), compare it with real database and deploy it into database
+
+![DbGate - export database model window](https://media.dbgate.io/img/export-database-model-window.png)

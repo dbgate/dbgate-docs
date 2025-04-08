@@ -3,7 +3,7 @@ title: Adminstration
 weight: 110
 ---
 
-Administration tool is available only on Premium edition. In Community edition, please use configuration using [environment variables](/env-variables)
+Administration tool is available only on Team Premium edition. In Community edition, please use configuration using [environment variables](/env-variables)
 
 All configuration from administration is saved into database, use [STORAGE_xxx environment variables](/env-variables/#premium-edition-configuration) for configure this.
 

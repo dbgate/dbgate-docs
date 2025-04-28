@@ -1,6 +1,6 @@
 ---
-title: Archives
-weight: 40
+title: Data archives
+weight: 1
 ---
 
 Archives are folders with data in JSONL (NDJSON) format. DbGate allows work with them very efficiently, you could import them into database, export them to other formats or directly edit data in archive. Archive behaves as a very fast and lighweight database stored in local files.
@@ -16,17 +16,5 @@ You could open JSONL files in different modes:
 - context menu "Open" - opens data grid, which allows sorting, filtering and editing your JSONL data
 - context menu "Open in text editor" - allows manualy editing JSONL file
 
-## Data duplicator
-Data duplicator is feature, which allows importing related data in data archives into SQL database. It could be started from data archive context menu, choose "Data duplicator". This menu is visible only when you have selected current database. Data duplicator then shows you settings for duplicating your archive.
-
-![DbGate data duplicator screenshot](https://media.dbgate.io/img/data-duplicator-light.png)
-
-Operations supported:
-- Copy row - insert new row into database from data archive. Autoincrement id is used for references to this table.,
-- Lookup (find matching row) - nothing is inserted. Duplicator finds matched row (by column defined in "Marched column") and uses it in ther references.
-- Insert if not exists - combination of preceding tow options. Lookup, it no row is matched, copy row
-
 ## Archives and DB models
 Archive folders are also used as storage for DB models. You could export DB model in database context menu, "Export DB model". You could than edit this model (YAML files for table structure, SQL files for views and stored procedures), compare it with real database and deploy it into database
-
-![DbGate - export database model window](https://media.dbgate.io/img/export-database-model-window.png)

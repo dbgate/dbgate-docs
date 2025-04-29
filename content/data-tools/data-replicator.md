@@ -3,14 +3,15 @@ title: Data replicator
 weight: 3
 ---
 
-## Data replicator
 Data replicator could synchronize your data in NDJSON files (data archives) with real database. It preserves relationships. Synchronization is one-way, from data archive data  into database.
 
-Data replicator is executed from [Data deployer][data-deployer]
+Data replicator is executed from [Data deployer](data-deployer)
 
 ### What means to preserve relationship?
 
 References are defined by foreign and primary keys. These values could be different in database and in archive, but replicator could preserve relationships between entities.
+
+We will show this on two related tables - Album and Track.
 
 ```mermaid
 erDiagram

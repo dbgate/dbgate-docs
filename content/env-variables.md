@@ -56,6 +56,7 @@ The following variables are available in both Community and Premium edition. How
 * SINGLE_CONNECTION - connection id. If defined, only this connection will be available (must be used with SINGLE_DATABASE)
 * SINGLE_DATABASE - database name, only this database will be available. (must be used with SINGLE_CONNECTION)
 * BASIC_AUTH - if true or 1 , basic authentization of both web and API is used. Otherwise, login form and JWT token base API authentization is used. Basic authentization cannot be used for OAuth authentization.
+* ALLOW_DBGATE_PRIVATE_CLOUD - by default, DbGate cloud is disabled for web version. Using this variable, you could enable it
 
 ## Logging configuration
 * LOG_LEVEL - all messages with this log level or bigger will be logged. One of values trace, debug, info, warn, error, fatal. Default is info

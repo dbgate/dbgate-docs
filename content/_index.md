@@ -24,6 +24,7 @@ DbGate is database manager, allowing to connect and work with supported database
 | [MariaDB](https://mariadb.org/) | {{< check >}}  | {{< check >}} | Backup, Restore |
 | [CockroachDB](https://www.cockroachlabs.com/) | {{< check >}}  | {{< check >}} | |
 | [DuckDB](https://duckdb.org/) | {{< check >}}  | {{< check >}} | |
+| [Firebird](https://www.firebirdsql.org//) | {{< check >}}  | {{< check >}} | |
 | [libSQL](https://libsql.org/) |  | {{< check >}} | |
 | [CosmosDB](https://azure.microsoft.com/en-us/products/cosmos-db) |  | {{< check >}} | |
 | [Amazon Redshift](https://aws.amazon.com/redshift/) |   | {{< check >}} | |

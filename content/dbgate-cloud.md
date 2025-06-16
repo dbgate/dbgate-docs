@@ -41,3 +41,12 @@ If you want to share your folder with other people, right-click on folder and ch
 * Admin - you have full access to folder, you could invite other people and write content
 * Write - You could write/delete content, but you could not invite other people
 * Read - only read content of folder. Please keep in mind, this permission doesn't apply databases available inside server defined connection
+
+## Public knowledge base
+Public knowledge base is a collection of useful SQL scripts and charts for tasks like SQL performance tuning, deadlock analysis, index usage etc... Knowledge base is available in all editions, but charts are available only in Premium editions.
+
+You could see all items under {{< mdi "cloud-search" >}} icon in left widget panel.  
+Grayed scripts denotes scripts, which are not compatible with currently selected database.
+
+![DbGate screenshot](https://media.dbgate.io/img/public-knowledge-base-tables-sizes-light.png)
+

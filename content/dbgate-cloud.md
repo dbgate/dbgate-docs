@@ -1,7 +1,6 @@
 ---
 title: DbGate Cloud
 weight: 35
-draft: true
 ---
 
 DbGate cloud is online storage for your connections, SQL scripts and other objects. Also it offers public knowledge base for useful SQL scripts.
@@ -47,6 +46,10 @@ Public knowledge base is a collection of useful SQL scripts and charts for tasks
 
 You could see all items under {{< mdi "cloud-search" >}} icon in left widget panel.  
 Grayed scripts denotes scripts, which are not compatible with currently selected database.
+
+If you would like to enhance knowledge base with your SQL scripts, please create pull request into [dbgate-knowledge-base](https://github.com/dbgate/dbgate-knowledge-base) GIT repository.
+
+Scripts in knowledge base are anotated with [SQL front matter](/sql-front-matter) syntax
 
 ![DbGate screenshot](https://media.dbgate.io/img/public-knowledge-base-tables-sizes-light.png)
 

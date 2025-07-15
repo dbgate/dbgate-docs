@@ -11,10 +11,18 @@ If no chart is autodetected, but you would like to create some chart from your q
 
 ## Chart settings
 Use {{< mdi "pencil" >}} Customize button for invoking chart settings. You could configure chart data source and style:
-* Chart type - Line, Bar, Pie
+* Chart type
+  * Bar
+  * Line
+  * Timeline - it's special case of line chart, with time on X axis
+  * Pie
+  * Polar area
 * X axis field - data on X axis. For date/time calues, grouping and timeline functions are available
+* Grouping field - defines more charts specified by value of this field
 * X axis transform - allows to define grouping for X - axis timeline (eg. by year or by month)
 * Y axis field N - you could have more fields on Y axis
+  * There is special field available for each data set, "Count", which counts rows
+* Aggregate function - Sum, Minimum, Maximum, Average, First Value, Last Value
 
 When you change any option in chart settings, it is saved at the beginning of the SQL script as front-matter.
 

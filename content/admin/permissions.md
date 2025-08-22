@@ -4,7 +4,7 @@ weight: 50
 ---
 
 ## Permissions system
-DbGate uses permission system with two dimensional hiearchy.
+DbGate uses permission system with three dimensional hiearchy.
 
 One hiearchy dimension is inheritance of permissions from roles.
 - Predefined permission set
@@ -13,6 +13,13 @@ One hiearchy dimension is inheritance of permissions from roles.
 - User
 
 The second hiearchy dimension is inheritance from parent roles.
+
+The third hiearchy dimension are permission for databases and tables. This applies only for [Database permissions](#database-permissions) and [Table permissions](#table-permissions).
+
+## Basic permissions
+Basic permissions could be configured in permission tree avaialble in user detail and role detail. If checkbox with permission state is grayed, it means, that permission is inherited.
+![Role administration - DbGate](https://media.dbgate.io/img/user-administration-light.png)
+
 
 ## Database permissions
 You could configure permissions related to database on "Databases" tab (in Role detail and in User detail)
@@ -39,6 +46,8 @@ You could configure permissions related to database on "Tables/Views/Objects" ta
 Tables permissions are not used, unless **"All tables/views/objects"** is permission is active
 
 Each line of databases permission rules table defines permission to matched table. The order of rules is important, permissions at the bottom override permissions at the top.
+
+The default table permission is inherited from database permission.
 
 **Columns:**
 * Connection - define, on which connection this rule is applied

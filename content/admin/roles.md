@@ -12,3 +12,11 @@ There are some predefined roles:
 - anonymous-user - role used for users logged with "Anonymous" authentication method
 
 ![Role administration - DbGate](https://media.dbgate.io/img/role-administration-light.png)
+
+### Role detail tabs
+* Info
+  * Configure role permissions
+  * Configure user assigned to this role
+* Connections - configure connections assigned to this role
+* Databases - configure [database permissions](permissions#database-permissions) for this role
+* Tables/views/objects - configure [table permissions](permissions#table-permissions) for this role

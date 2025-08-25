@@ -28,7 +28,7 @@ Database permissions are not used, unless **"All databases"** is permission is a
 
 Each line of databases permission rules table defines permission to matched database. The order of rules is important, permissions at the bottom override permissions at the top.
 
-![Database permissions - DbGate](https://media.dbgate.io/img/dbpermissions-light.png)
+![Database permissions - DbGate](https://media.dbgate.io/img/database-permissions-light.png)
 
 **Columns:**
 * Connection - define, on which connection this rule is applied

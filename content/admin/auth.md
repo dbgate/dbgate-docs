@@ -4,9 +4,9 @@ weight: 10
 ---
 
 ## Authentication tab
-![Authentication administration - DbGate](https://media.dbgate.io/img/authentication-administration-light.png)
-
 There are several methods of authentication. Use will choose authentication method on login page. If you have only one authentication method enabled and authentication method doesn't require login page, login page is skipped.
+
+![Authentication administration - DbGate](https://media.dbgate.io/img/authentication-administration-light.png)
 
 - Local authentication method - user is selected from user list in storage database (configured in "Users" tab)
 - Anonymous - no credentials are required, user have permissions from "anonymous-user" role

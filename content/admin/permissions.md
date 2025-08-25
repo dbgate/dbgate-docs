@@ -3,61 +3,75 @@ title: Permissions
 weight: 50
 ---
 
-## Permissions system
-DbGate uses permission system with three dimensional hiearchy.
+DbGate’s permissions use **two dimensions**:
 
-One hiearchy dimension is inheritance of permissions from roles.
-- Predefined permission set
-- Predefined role (superadmin/logged-user/anonymous user)
-- Custom roles
-- User
+1. **Source of permissions (who sets them)**
+   Permissions cascade from broad to specific. More specific settings override more general ones:
+   * Predefined permission sets
+   * Predefined roles (*superadmin*, *logged user*, *anonymous*)
+   * Custom roles
+   * Individual user
 
-The second hiearchy dimension is inheritance from parent roles.
+2. **Object scope**
+   Permissions can target specific **databases** and **tables/objects**. See **[Database permissions](#database-permissions)** and **[Table permissions](#table-permissions)**.
 
-The third hiearchy dimension are permission for databases and tables. This applies only for [Database permissions](#database-permissions) and [Table permissions](#table-permissions).
+---
 
-## Basic permissions
-Basic permissions could be configured in permission tree avaialble in user detail and role detail. If checkbox with permission state is grayed, it means, that permission is inherited.
+## Basic Permissions
+
+Configure global/basic permissions in the **permission tree** in **User detail** or **Role detail**.
+
+* A **greyed** checkbox means the permission is **inherited** (e.g., from a role or a predefined permission set), not set directly on that user/role.
+
 ![Role administration - DbGate](https://media.dbgate.io/img/user-administration-light.png)
 
+---
 
-## Database permissions
-You could configure permissions related to database on "Databases" tab (in Role detail and in User detail)
+## Database Permissions
 
-Database permissions are not used, unless **"All databases"** is permission is active
+Set database-level permissions on the **Databases** tab (in both Role detail and User detail).
 
-Each line of databases permission rules table defines permission to matched database. The order of rules is important, permissions at the bottom override permissions at the top.
+> **Important:** Database rules are applied **only if** the **“All databases”** permission is unchecked in the basic permissions.
+
+* Each row in the rules table grants or denies access to databases that **match** the row’s filters.
+* **Rule order matters**: rules **lower** in the list **override** rules above them.
 
 ![Database permissions - DbGate](https://media.dbgate.io/img/database-permissions-light.png)
 
-**Columns:**
-* Connection - define, on which connection this rule is applied
-* Database names - define database name (by list of names or by regular expression)
-* Role:
-  * View - view database, without access to tables, views, etc.
-  * Read content - access to database content, readonly
-  * Write data - change data of tables
-  * Run script - run any SQL script, create/drop/alter tables
-  * Deny - don't allow access to this database  
+**Columns**
+
+* **Connection** – which connection the rule applies to.
+* **Database names** – databases to match (list of names or a regular expression).
+* **Role (access level)**
+  * **View** – can see the database, but not its tables/views/etc.
+  * **Read content** – read-only access to database content.
+  * **Write data** – can modify table data.
+  * **Run script** – can run any SQL script; can create/drop/alter objects.
+  * **Deny** – blocks access to the database.
+
+---
 
 ## Table Permissions
-You could configure permissions related to database on "Tables/Views/Objects" tab (in Role detail and in User detail)
 
-Tables permissions are not used, unless **"All tables/views/objects"** is permission is active
+Set table/object-level permissions on the **Tables / Views / Objects** tab (in Role detail and User detail).
 
-Each line of databases permission rules table defines permission to matched table. The order of rules is important, permissions at the bottom override permissions at the top.
+> **Important:** Table/object rules are applied **only if** the **“All tables/views/objects”** permission is unchecked in the basic permissions.
 
-The default table permission is inherited from database permission.
+* Each row defines access to tables/objects that **match** the filters.
+* **Rule order matters**: rules **lower** in the list **override** rules above them.
+* By default, table permissions are **inherited from the database permission**.
 
-**Columns:**
-* Connection - define, on which connection this rule is applied
-* Database names - define database name (by list of names or by regular expression)
-* Schema names - define schema name (by list of names or by regular expression)
-* Table names - define table/view/procedure/trigger name (by list of names or by regular expression)
-* Scope - defines types of matched object
-* Role:
-  * Read - read table data
-  * Update only - update table rows, don't allow to insert and delete operations
-  * Run script - allow to run script with this table. In fact, if you don't have "Run script" permission on database level, this cannot be used
-  * Deny - don't allow access to this table
+**Columns**
+
+* **Connection** – which connection the rule applies to.
+* **Database names** – databases to match (list or regular expression).
+* **Schema names** – schemas to match (list or regular expression).
+* **Table names** – object names to match (table/view/procedure/trigger) as a list or regular expression.
+* **Scope** – which object types the rule covers (tables, views, procedures, triggers, …).
+* **Role (access level)**
+  * **Read** – can read table data.
+  * **Update only** – can update rows; **insert** and **delete** are not allowed.
+  * **Run script** – can run a script that touches this object.
+    > Note: If you **don’t** have **“Run script”** at the **database** level, you cannot use it at the table level.
+  * **Deny** – blocks access to the object.
 

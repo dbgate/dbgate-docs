@@ -71,6 +71,7 @@ Set table/object-level permissions on the **Tables / Views / Objects** tab (in R
 * **Role (access level)**
   * **Read** – can read table data.
   * **Update only** – can update rows; **insert** and **delete** are not allowed.
+  * **Create, update, delete** - can edit rows without restrictions
   * **Run script** – can run a script that touches this object.
     > Note: If you **don’t** have **“Run script”** at the **database** level, you cannot use it at the table level.
   * **Deny** – blocks access to the object.

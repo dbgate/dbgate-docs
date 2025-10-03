@@ -41,6 +41,9 @@ If you want to share your folder with other people, right-click on folder and ch
 * Write - You could write/delete content, but you could not invite other people
 * Read - only read content of folder. Please keep in mind, this permission doesn't apply databases available inside server defined connection
 
+## Shared folders in Community edition
+In Community edition, you could use shared folders created by Premium users, but you could not create your own shared folders. This is intended to allow teams with Premium edition to share connections, SQL files and ER diagrams with other team members with Community edition.
+
 ## Public knowledge base
 Public knowledge base is a collection of useful SQL scripts and charts for tasks like SQL performance tuning, deadlock analysis, index usage etc... Knowledge base is available in all editions, but charts are available only in Premium editions.
 

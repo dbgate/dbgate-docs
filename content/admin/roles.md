@@ -17,6 +17,8 @@ There are some predefined roles:
 * Info
   * Configure role permissions
   * Configure user assigned to this role
+* Team files - configure access to [team files](team-files)
 * Connections - configure connections assigned to this role
 * Databases - configure [database permissions](permissions#database-permissions) for this role
 * Tables/views/objects - configure [table permissions](permissions#table-permissions) for this role
+* Disk files - configure access to files on disk/docker volume

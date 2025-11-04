@@ -9,11 +9,11 @@ Configuration via environment variables could be used in docker containers, also
   * [dbgate/dbgate](https://hub.docker.com/r/dbgate/dbgate) - Docker image for Community edition
   * [dbgate/dbgate-premium](https://hub.docker.com/r/dbgate/dbgate-premium) - Docker image for Premium edition
 
-## Premium vs Community edition
-Community (FOSS) edition uses only configuration from environment variables listed below. Premium edition uses database storage for settings with [administration UI](/features/administration), only few basic settings are configured with env variables.
+## Premium vs Team Community edition
+Community (FOSS) edition uses only configuration from environment variables listed below. Team Premium edition uses database storage for settings with [administration UI](/features/administration), only few basic settings are configured with env variables.
 
-## Premium edition configuration
-These variables are available only in Premium edition.
+## Team Premium edition configuration
+These variables are available only in Team Premium edition.
   * STORAGE_SERVER - database server (host name) for storage database
   * STORAGE_USER - database user
   * STORAGE_PASSWORD - database password

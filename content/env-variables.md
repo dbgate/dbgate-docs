@@ -70,6 +70,7 @@ The following variables are available in both Community and Premium edition. How
 | French | fr |
 | Italian | it |
 | Portuguese (Brazil) | pt |
+| Japanese | ja |
 | Chinese - simplified | zh |
 | Czech | cs |
 | Slovak | sk |

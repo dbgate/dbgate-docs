@@ -59,7 +59,21 @@ The following variables are available in both Community and Premium edition. How
 * SKIP_ALL_AUTH - if true or 1, all authentization is skipped
 * ALLOW_DBGATE_PRIVATE_CLOUD - by default, DbGate cloud is disabled for web version. Using this variable, you could enable it
 * REDIRECT_TO_DBGATE_CLOUD_LOGIN - in web version, redirect to DbGate cloud login, instead of opening new window
-* LANGUAGE - UI language, eg. en, cs, de, fr, etc.
+* LANGUAGE - UI language, eg. en, cs, de, fr, etc. See language configuration table below
+
+## Language configuration
+| Language | Value |
+|----------|-------|
+| English | en |
+| German | de |
+| Spanish | es |
+| French | fr |
+| Italian | it |
+| Portuguese (Brazil) | pt |
+| Chinese - simplified | zh |
+| Czech | cs |
+| Slovak | sk |
+
 
 ## Logging configuration
 * LOG_LEVEL - all messages with this log level or bigger will be logged. One of values trace, debug, info, warn, error, fatal. Default is info

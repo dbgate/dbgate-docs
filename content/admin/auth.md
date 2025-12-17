@@ -31,7 +31,7 @@ Keycloak can be integrated with DbGate using the generic OAuth 2.0 Provider. To 
 - **OAuth token endpoint**: `https://keycloak.company.com/realms/your-realm/protocol/openid-connect/token`
 - **OAuth logout endpoint**: `https://keycloak.company.com/realms/your-realm/protocol/openid-connect/logout`
 - **OAuth client**: Your Keycloak client ID
-- **OAuth login field**: preferred_username
+- **OAuth login field**: the Keycloak claim that contains the user's login identifier (commonly `preferred_username`; depending on your Keycloak configuration you may also use `given_name`, `email`, or another suitable claim)
 
 **Keycloak Client Configuration:**
 - Valid Redirect URIs: `https://dbgate.company.com/`

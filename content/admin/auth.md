@@ -17,3 +17,25 @@ There are several methods of authentication. Use will choose authentication meth
 
 ### Option "Allow only defined logins"
 For external identity providers, user doesn't have to exist in DbGate storage database. If this checkbox is checked, user, which is not found in storage database, is not allowed to login
+
+### KeyCloak
+
+Keycloak can be integrated with DbGate using the generic OAuth 2.0 Provider. To configure Keycloak authentication, you need to:
+
+1. Create a new client in your Keycloak realm
+2. Configure the client settings
+3. Set up the OAuth 2.0 provider in DbGate with the following parameters:
+
+**Required Configuration:**
+- **OAuth auth endpoint**: `https://keycloak.company.com/realms/your-realm/protocol/openid-connect/auth`
+- **OAuth token endpoint**: `https://keycloak.company.com/realms/your-realm/protocol/openid-connect/token`
+- **OAuth logout endpoint**: `https://keycloak.company.com/realms/your-realm/protocol/openid-connect/logout`
+- **OAuth client**: Your Keycloak client ID
+- **OAuth login field**: preferred_username
+
+**Keycloak Client Configuration:**
+- Valid Redirect URIs: `https://dbgate.company.com/`
+
+Make sure your Keycloak user attributes are properly mapped to provide the necessary claims (email, name, username) that DbGate expects from the OAuth provider.
+
+

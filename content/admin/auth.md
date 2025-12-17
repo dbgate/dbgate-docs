@@ -18,7 +18,7 @@ There are several methods of authentication. Use will choose authentication meth
 ### Option "Allow only defined logins"
 For external identity providers, user doesn't have to exist in DbGate storage database. If this checkbox is checked, user, which is not found in storage database, is not allowed to login
 
-### KeyCloak
+### Keycloak
 
 Keycloak can be integrated with DbGate using the generic OAuth 2.0 Provider. To configure Keycloak authentication, you need to:
 

@@ -162,9 +162,26 @@ You could configure connection list with env variables, than "Add connection: en
 * LOCAL_DATA_CENTER_[connection id] - local data center (for Apache Cassandra)
 * CONNECTION_[connection id]_parameterName - set engine-specific parameter name
 
-
 SettingsModal.svelte , find string "name="/ If you need to define "true", use value "1". If you need "false", use empty string ("0" will not work)
 
+## Roles configuration
+This configuration can be used only in Team Premium edition, when storage database is used for settings. Roles from environment variables are imported into storage database at docker container startup.
+You could define roles with specific permissions and assign connections to the role. Assigning roles to users is done in administration UI.
+* `ROLE_[role_name]_PERMISSIONS` - comma separated list of permissions for given role. See permission list below
+* `ROLE_[role_name]_CONNECTIONS` - comma separated list of connection IDs assigned to given role
+* `ROLE_[role_name]_DATABASES_[db_perm_id]_CONNECTION` - connection ID for database permission with given ID
+* `ROLE_[role_name]_DATABASES_[db_perm_id]_DATABASES` - pipe ("|") separated list of database names for database permission with given ID
+* `ROLE_[role_name]_DATABASES_[db_perm_id]_DATABASES_REGEX` - regular expression for database names for database permission with given ID
+* `ROLE_[role_name]_DATABASES_[db_perm_id]_PERMISSION` - one of: deny | run_script | write_data | read_content | view
+* `ROLE_[role_name]_TABLES_[db_perm_id]_CONNECTION` - connection ID for table permission with given ID
+* `ROLE_[role_name]_TABLES_[db_perm_id]_DATABASES` - pipe ("|") separated list of database names for database permission with given ID
+* `ROLE_[role_name]_TABLES_[db_perm_id]_DATABASES_REGEX` - regular expression for database names for database permission with given ID
+* `ROLE_[role_name]_TABLES_[db_perm_id]_SCHEMAS` - pipe ("|") separated list of schema names for table permission with given ID
+* `ROLE_[role_name]_TABLES_[db_perm_id]_SCHEMAS_REGEX` - regular expression for schema names for table permission with given ID
+* `ROLE_[role_name]_TABLES_[db_perm_id]_TABLES` - pipe ("|") separated list of table names for database permission with given ID
+* `ROLE_[role_name]_TABLES_[db_perm_id]_TABLES_REGEX` - regular expression for table names for database permission with given ID
+* `ROLE_[role_name]_TABLES_[db_perm_id]_PERMISSION` - one of: deny | run_script | create_update_delete | update_only | read
+* `ROLE_[role_name]_TABLES_[db_perm_id]_SCOPE` - one of: collections | sql_objects | triggers | functions | procedures | tables_views_collections | views | tables | all_objects
 ## Permissions
 By default, all permissions are available. If you use \~ prefix, permission is revoked.
 

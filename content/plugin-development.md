@@ -20,10 +20,7 @@ npm install -g yo
 npm install -g generator-dbgate
 ```
 
-## Create theme plugin
-Theme plugin is the simplest variant, it contains only frontend part.  
-Note: theme plugins are supported from version 4.6.1-beta.1.
-
+## Create plugin
 Run following command in console:
 
 ```sh
@@ -31,8 +28,8 @@ yo dbgate
 ```
 
 You have to answer 3 questions:
-- Plugin name, must start with dbgate-plugin-, eg. dbgate-plugin-mytheme
-- Plugin type, choose eg. "Light theme"
+- Plugin name, must start with dbgate-plugin-, eg. dbgate-plugin-myplugin
+- Plugin type, choose eg. "Database driver"
 - Package manager, choose npm or yarn, what you prefer. DbGate uses yarn.
 
 ## Edit and test plugin

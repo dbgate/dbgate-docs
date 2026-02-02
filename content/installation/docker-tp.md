@@ -20,7 +20,7 @@ See [environment variables documentation](/env-variables/#team-premium-edition-c
 
 In fact, DbGate Team Premium has very low resource consumption, but for best performance we recommend following configuration (for 10 concurrent users):
 - Minimum 2 CPU cores
-- Minimum 2 GB RAM
+- Minimum 4 GB RAM
 - Minimum 10 GB free disk space
 
 If you want to use disk files for storage of user files (like query results export), you should map `/root/.dbgate` path in container.

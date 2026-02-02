@@ -30,7 +30,7 @@ If you want to use disk files for storage of user files (like query results expo
       - dbgate-data:/root/.dbgate
 ```
 
-## Stateless/Statuefullness
+## Stateless/Statefullness
 DbGate container is statefull. 
 
 The following data is stored inside container:

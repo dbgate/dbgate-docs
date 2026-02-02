@@ -2,7 +2,7 @@
 title: Deploy on AWS
 subtitle: Single-click deploy on Amazon EC2 cluster
 icon: aws.svg
-weight: 14
+weight: 10
 demo_url: https://aws.amazon.com/marketplace/pp/prodview-glw7okfnhf4cy
 demo_title: View on AWS
 edition: 'premium'

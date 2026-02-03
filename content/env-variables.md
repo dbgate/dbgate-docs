@@ -19,6 +19,7 @@ These variables are available only in Team Premium edition.
   * STORAGE_PASSWORD - database password
   * STORAGE_PORT - database port (optional. of omitted, default port for selected database engine is used)
   * STORAGE_DATABASE - storage database name
+  * STORAGE_SCHEMA - storage database schema (optional, eg. for PostgreSQL (typically public) or MS SQL (typically dbo))
   * STORAGE_ENGINE - engine used for storage database. Currectly, MySQL, PostgreSQL, SQL Server and Oracle. Use one of following values:
     * mysql@dbgate-plugin-mysql
     * postgres@dbgate-plugin-postgres
@@ -26,7 +27,7 @@ These variables are available only in Team Premium edition.
     * oracle@dbgate-plugin-oracle
   * ADMIN_PASSWORD - password for administrator. Administration is available on URL https://dbgate_url/admin.html. If password is not defined and STORAGE_DATABASE is defined, DbGate asks for admin password at first.
   * DBGATE_LICENSE - license key for DbGate. Please contact sales@dbgate.eu for trial license. If not defined, DbGate Premium asks for license at first. DbGate Community doesn't require any license.
-
+  
 ### Additional connection params of storage
   * STORAGE_SOCKET_PATH - socket path for storage connection
   * STORAGE_DATABASE_URL - database URL for storage connection

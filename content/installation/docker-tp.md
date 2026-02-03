@@ -1,11 +1,11 @@
 ---
-title: Docker Team Premium
+title: Team Premium on Docker
 weight: 30
 ---
 
 Typical Team Premium installation consists of two components: 
 - DbGate server docker container
-- Database server (MS SQL, MySQL, PostgreSQL, Oracle) - internal storage database for connections, users and roles
+- Database server (MS SQL, MySQL, PostgreSQL, Oracle) - internal storage database for connections, users and roles. You could use existing database server or install new one.
 
 ## DbGate Server Docker Container
 User [DbGate Team Premium image](https://hub.docker.com/r/dbgate/dbgate-premium) from Docker Hub:
@@ -18,16 +18,56 @@ DbGate Team Premium container requires some environment variables to be set:
 
 See [environment variables documentation](/env-variables/#team-premium-edition-configuration) for more details about available environment variables.
 
+## Resource Requirements
+
 In fact, DbGate Team Premium has very low resource consumption, but for best performance we recommend following configuration (for 10 concurrent users):
-- Minimum 2 CPU cores
-- Minimum 4 GB RAM
-- Minimum 10 GB free disk space
+- 2 CPU cores
+- 4 GB RAM
+- 10 GB free disk space (for temporary files, query results, etc. Actual disk space consumption depends on usage patterns)
+
+For single-user installations, you could use much lower resource limits (1 GB RAM, 1 CPU core).
+
+## Configuring docker
 
 If you want to use disk files for storage of user files (like query results export), you should map `/root/.dbgate` path in container.
 
+Below is example `docker-compose.yml` file, definiting DbGate Team Premium container with PostgreSQL as internal storage database.
+- You could define `DBGATE_LICENSE` environment variable to set license key. If not set, DbGate will ask for license key on first start.
+-  You could define 'ADMIN_PASSWORD' environment variable to set admin user password. If not set, DbGate will ask for admin password on first start.
+
 ```yaml
+version: '3'
+services:
+  dbgate:
+    image: dbgate/dbgate-premium
+    restart: always
+    ports:
+      - 80:3000
+    environment:
+      STORAGE_SERVER: postgres_service
+      STORAGE_USER: postgres
+      STORAGE_PASSWORD: XXXStoragePwd
+      STORAGE_PORT: 5432
+      STORAGE_DATABASE: dbgate
+      STORAGE_ENGINE: postgres@dbgate-plugin-postgres
+      STORAGE_SCHEMA: public
     volumes:
-      - dbgate-data:/root/.dbgate
+      - dbgate_data:/root/.dbgate
+
+  postgres_service:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: XXXStoragePwd
+      POSTGRES_DB: dbgate
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+    postgres_data:
+      driver: local
+    dbgate_data:
+      driver: local
 ```
 
 ## Stateless/Statefullness

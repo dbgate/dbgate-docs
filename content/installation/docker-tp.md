@@ -22,10 +22,11 @@ See [environment variables documentation](/env-variables/#team-premium-edition-c
 
 In fact, DbGate Team Premium has very low resource consumption, but for best performance we recommend following configuration (for 10 concurrent users):
 - 2 CPU cores
-- 4 GB RAM
-- 10 GB free disk space (for temporary files, query results, etc. Actual disk space consumption depends on usage patterns)
+- 4 GB RAM (includes RAM consumption of MySQL or PostgreSQL internal storage database)
+- 10 GB free disk space (for docker installation, storage database, temporary files, query results, etc. Actual disk space consumption depends on usage patterns)
 
-For single-user installations, you could use much lower resource limits (1 GB RAM, 1 CPU core).
+For smaller number of users, you could use lower resource limits (1 GB RAM, 1 CPU core).  
+When you need to minimize resource consumption for small installations, we recommend to use MySQL/MariaDB as internal storage.  
 
 ## Configuring docker
 

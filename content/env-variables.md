@@ -49,7 +49,7 @@ The following variables are available in both Community and Premium edition. How
 * WEB_ROOT - if you need to run DbGate in virtual subdirectory (eg. for value /dbadmin , dbgate will be accessible on localhost:3000/dbadmin )
 * LOGIN , PASSWORD - credentials for accessing web app
 * PERMISSIONS - list of comma separated permissions. See also permission list below
-* SHELL_CONNECTION - if true or 1, connections can be defined in shell scripts. Otherwise, only preconfigured connections are allowed. By default, this is not allowed for security reasons.
+* SHELL_CONNECTION - if true or 1, connections can be defined in shell scripts. Otherwise, only preconfigured connections are allowed. By default, this is not allowed for security reasons. Be aware, when allowed, encrypted password are sent to frontend.
 * SHELL_SCRIPTING - if true or 1, custom JavaScript shell scripts are allowed. By default, this is not allowed for security reasons.
 * LOGIN_PASSWORD_[login] - password for specified login
 * LOGIN_PERMISSIONS_[login] - list of comma separated permissions for given login. See also permission list below

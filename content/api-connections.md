@@ -21,17 +21,17 @@ DbGate automatically discovers the GraphQL schema, including available types, qu
 
 ### Query editor
 
-The GraphQL query editor provides syntax highlighting and allows you to write queries and mutations. You can use the GraphQL explorer to build queries by selecting fields and arguments from the schema.
+The GraphQL query editor allows you to write queries and mutations. You can use the GraphQL explorer to build queries by selecting fields and arguments from the schema.
 
 ![screenshot](https://media.dbgate.io/img/rest-graphql-query-light.png)
 
 ### Variables
 
-GraphQL queries support variables. Define variables in the variables panel and reference them in your queries using the standard GraphQL variable syntax.
+GraphQL queries support variables. Define variables in the variables panel and reference them in your queries using the standard GraphQL variable syntax. Variables could be edited in a form or as raw JSON.
 
 ### Response viewer
 
-Query results are displayed in a formatted JSON viewer with an expandable tree structure. You can navigate through nested data and copy values as needed.
+Query results are displayed in a formatted JSON viewer with an expandable tree structure. If arrays are detected in the response, tabular view is displayed automatically. You can switch back to the raw JSON view if needed.
 
 ## OpenAPI (Swagger)
 
@@ -47,7 +47,7 @@ The OpenAPI browser displays all available endpoints, organized by tags and path
 - HTTP method (GET, POST, PUT, DELETE, PATCH)
 - Parameters (path, query, header, body)
 - Request body schemas
-- Response schemas and status codes
+- Documentation descriptions
 
 ### Request execution
 
@@ -105,14 +105,10 @@ API response data can be exported to various formats using the standard DbGate e
 - SQL INSERT statements
 - XML
 
-Use the Export command from the result toolbar.
-
-## Query history
-
-Previously executed API requests are stored in query history. Access history from the history panel to view and re-execute past requests. History includes all request parameters and variables.
+Use the standard "Export" context menu option in tabular data browser.
 
 ## Working with multiple APIs
 
-You can create connections to multiple APIs and databases in the same workspace. Switch between connections using the connection selector. Open multiple request tabs to work with different endpoints simultaneously.
+You can create connections to multiple APIs and databases. Open multiple request tabs to work with different endpoints simultaneously.
 
-Tab state is preserved, so when you reopen a saved request, all parameter values and variables are restored.
+Tab state is preserved after closing and reopening app, you could reopen a request in closed tab history.

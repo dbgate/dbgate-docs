@@ -28,6 +28,8 @@ DbGate is database manager, allowing to connect and work with supported database
 | [libSQL](https://libsql.org/) |  | {{< check >}} | |
 | [CosmosDB](https://azure.microsoft.com/en-us/products/cosmos-db) |  | {{< check >}} | |
 | [Amazon Redshift](https://aws.amazon.com/redshift/) |   | {{< check >}} | |
+| [Firestore](https://firebase.google.com/products/firestore) |  | {{< check >}} | |
+| [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) |  | {{< check >}} | |
 
 ## Supported platforms
 

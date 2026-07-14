@@ -1,6 +1,7 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository. It holds only agent-specific instructions — for project overview, setup, commands, architecture, and deployment, see [`README.md`](README.md). Keep common documentation there, not duplicated here; if a change here would make `README.md` stale, update `README.md` instead (or as well).
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+Common documentation is in README.md, keep this documentation up-to-date.
 
 ## Additional directories
 

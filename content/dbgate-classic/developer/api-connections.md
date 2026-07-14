@@ -9,7 +9,7 @@ DbGate supports connections to REST APIs, GraphQL services, and OData endpoints.
 
 API connection support is available in DbGate Premium.
 
-> Looking for API browsing without the desktop app? [DbGate Central](/dbgate-products/dbgate-central/connecting-to-api-endpoints/) is a separate, hosted implementation of GraphQL/oData/Shopify connections, reimplemented from the ground up for the browser.
+> Looking for API browsing without the desktop app? [DbGate Central](/dbgate-central/connecting-to-api-endpoints/) is a separate, hosted implementation of GraphQL/oData/Shopify connections, reimplemented from the ground up for the browser.
 
 ## GraphQL
 

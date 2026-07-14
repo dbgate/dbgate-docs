@@ -1,6 +1,6 @@
 ---
 title: DbGate Shopify App
-weight: 40
+weight: 30
 ---
 
 DbGate Shopify App is a native Shopify app, listed on the [Shopify App Store](https://apps.shopify.com/dbgate), that brings DbGate-style spreadsheet data management directly into your store's admin. View, edit, import and export your store data in a fast, spreadsheet-like grid - and go further with scheduled data feeds - all without leaving Shopify.

@@ -1,13 +1,13 @@
 ---
 title: DbGate Cloud
-weight: 10
+weight: 80
 aliases:
   - /dbgate-cloud/
 ---
 
 DbGate cloud is online storage for your connections, SQL scripts and other objects. Also it offers public knowledge base for useful SQL scripts.
 
-> DbGate Cloud is a storage companion for the **desktop** DbGate app (connections, SQL scripts, shared folders). Looking for a hosted, browser-only app instead? See [DbGate Central](../dbgate-central/).
+> DbGate Cloud is a storage companion for the **desktop** DbGate app (connections, SQL scripts, shared folders). Looking for a hosted, browser-only app instead? See [DbGate Central](/dbgate-central/).
 
 ## Sign in
 To use DbGate cloud, it is neccessary to sign in. Use {{< mdi "account-remove-outline" >}} icon in left panel.

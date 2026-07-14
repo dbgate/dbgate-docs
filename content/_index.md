@@ -2,45 +2,13 @@
 title: DbGate documentation
 ---
 
-## What is DbGate?
+DbGate comes in several products, built for different ways of working with data. Use this page to find the right one.
 
-DbGate is database manager, allowing to connect and work with supported databases. It is both desktop app and web app. It's designed to by fast and easy to use.
-
-This page describes **[DbGate Classic](/dbgate-classic/)** - the desktop and self-hosted web app for connecting to SQL and NoSQL databases (Community, Premium and Team Premium editions). DbGate also ships as browser-based and hosted products for working with APIs and Shopify stores - see [DbGate Products](/dbgate-products/) to find the right one for you.
-
-![DbGate screenshot](https://media.dbgate.io/img/common-data-browser-light.png)
-
-## Supported databases
-
-| Database | {{< center "Community" >}} | {{< center "Premium" >}} | Extra Features |
+| Product | Hosting | Login | Best for |
 |---|---|---|---|
-| [MySQL](https://www.mysql.com/) | {{< check >}}  | {{< check >}} | Backup, Restore |
-| [PostgreSQL](https://postgresql.org/) | {{< check >}}  | {{< check >}} | Backup, Restore |
-| [SQL Server](https://www.microsoft.com/en-us/sql-server) | {{< check >}}  | {{< check >}} | |
-| [Oracle](https://www.oracle.com/database/) | {{< check >}}  | {{< check >}} | |
-| [SQLite](https://sqlite.org/) | {{< check >}}  | {{< check >}} | |
-| [MongoDB](https://www.mongodb.com/) | {{< check >}}  | {{< check >}} | |
-| [Cassandra](http://cassandra.apache.org/) | {{< check >}}  | {{< check >}} | |
-| [ClickHouse](https://clickhouse.tech/) | {{< check >}}  | {{< check >}} | |
-| [Redis](https://redis.io/) | {{< check >}}  | {{< check >}} | |
-| [MariaDB](https://mariadb.org/) | {{< check >}}  | {{< check >}} | Backup, Restore |
-| [CockroachDB](https://www.cockroachlabs.com/) | {{< check >}}  | {{< check >}} | |
-| [DuckDB](https://duckdb.org/) | {{< check >}}  | {{< check >}} | |
-| [Firebird](https://www.firebirdsql.org//) | {{< check >}}  | {{< check >}} | |
-| [libSQL](https://libsql.org/) |  | {{< check >}} | |
-| [CosmosDB](https://azure.microsoft.com/en-us/products/cosmos-db) |  | {{< check >}} | |
-| [Amazon Redshift](https://aws.amazon.com/redshift/) |   | {{< check >}} | |
-| [Firestore](https://firebase.google.com/products/firestore) |  | {{< check >}} | |
-| [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) |  | {{< check >}} | |
+| [DbGate Classic](/dbgate-classic/) (Community / Premium / Team Premium) | Desktop app, or self-hosted web (Docker, NPM, AWS, Azure) | Optional (Team Premium) | Full-featured client for SQL and NoSQL database servers, with [DbGate Cloud](/dbgate-classic/dbgate-cloud/) online storage for connections and scripts |
+| [DbGate Lite](/dbgate-lite/) | Hosted, free, in-browser | None | Learning SQL and quick, ad-hoc work with data files |
+| [DbGate Central](/dbgate-central/) | Hosted, paid, in-browser | Required | Browsing, querying and editing GraphQL, oData and Shopify APIs like a database, with BI reports and an MCP server for AI agents |
+| [DbGate Shopify App](/dbgate-shopify-app/) | Native Shopify app, embedded in your store admin | Shopify session | Bulk viewing/editing Shopify store data and generating scheduled product feeds |
 
-## Supported platforms
-
-- Desktop
-  - Windows
-  - MacOS (both ARM and Intel processors)
-  - Linux
-- Web version
-  - Docker
-  - NPM
-  - Azure
-  - AWS
+DbGate Lite and DbGate Central are built on the same underlying grid and query engine - so filtering, editing and browsing feel the same in both, but Lite is free and works only with local SQLite/DuckDB databases and files, while Central adds hosted API connections, cloud-stored workspaces and team features.

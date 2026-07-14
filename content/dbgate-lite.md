@@ -1,6 +1,6 @@
 ---
 title: DbGate Lite
-weight: 20
+weight: 10
 ---
 
 [DbGate Lite](https://lite.dbgate.io/) is a free, in-browser tool for working with data - no installation and no login required. It is built on the same grid, filtering and query engine as [DbGate Central](../dbgate-central/), so browsing, filtering and editing feel the same in both.

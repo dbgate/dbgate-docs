@@ -1,6 +1,6 @@
 ---
 title: DbGate Central
-weight: 20
+weight: 10
 ---
 
 [DbGate Central](https://central.dbgate.cloud) is a hosted product that turns your GraphQL, oData and Shopify API endpoints into something you can browse, query and edit like a regular database - entirely in your browser, nothing to install.

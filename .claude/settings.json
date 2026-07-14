@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "additionalDirectories": [
+      "../dbgate",
+      "../dbgate-merged",
+      "../dbgate-lite",
+      "../web-dbgate-io"
+    ],
+    "deny": [
+      "Write(../dbgate/**)",
+      "Edit(../dbgate/**)",
+      "Write(../dbgate-merged/**)",
+      "Edit(../dbgate-merged/**)",
+      "Write(../dbgate-lite/**)",
+      "Edit(../dbgate-lite/**)",
+      "Write(../web-dbgate-io/**)",
+      "Edit(../web-dbgate-io/**)"
+    ]
+  }
+}

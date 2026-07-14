@@ -10,10 +10,10 @@ DbGate cloud is online storage for your connections, SQL scripts and other objec
 > DbGate Cloud is a storage companion for the **desktop** DbGate app (connections, SQL scripts, shared folders). Looking for a hosted, browser-only app instead? See [DbGate Central](/dbgate-central/).
 
 ## Sign in
-To use DbGate cloud, it is neccessary to sign in. Use {{< mdi "account-remove-outline" >}} icon in left panel.
+To use DbGate cloud, it is necessary to sign in. Use {{< mdi "account-remove-outline" >}} icon in left panel.
 
 Your cloud storage is always associated with your e-mail address.  
-You could choose one of following authentization providers:
+You could choose one of following authentication providers:
 * GMail
 * GitHub
 * E-mail - one-time sign-in magic link will be sent to your email
@@ -34,7 +34,7 @@ Save connection to cloud:
 ## Working with folders
 You could create next folders besides your Private folder (Premium edition needed).
 
-Under {{<mdi "plus-thick" >}} button, there are commandsL
+Under {{<mdi "plus-thick" >}} button, there are commands:
 * New shared folder - creates new shared folder. By default, it is accessible only to you, you could invite next users
 * Add existing shared folder - if you have invite link to some shared folder (created by different user), this is the right place to use it
 
@@ -56,7 +56,7 @@ Grayed scripts denotes scripts, which are not compatible with currently selected
 
 If you would like to enhance knowledge base with your SQL scripts, please create pull request into [dbgate-knowledge-base](https://github.com/dbgate/dbgate-knowledge-base) GIT repository.
 
-Scripts in knowledge base are anotated with [SQL front matter](/dbgate-classic/developer/sql-front-matter) syntax
+Scripts in knowledge base are annotated with [SQL front matter](/dbgate-classic/developer/sql-front-matter) syntax
 
 ![DbGate screenshot](https://media.dbgate.io/img/public-knowledge-base-tables-sizes-light.png)
 

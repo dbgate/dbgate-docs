@@ -47,7 +47,7 @@ or if you use npm, than
 npm run plugin
 ```
 This commands installs your plugin in localy installed DbGate instance (or updates it, when you make changes). After DbGate restart, you should see new theme.  
-Restart is not neccessary, reload app (menu View/Reload) is enough to use new plugin version after running "yarn plugin"
+Restart is not necessary, reload app (menu View/Reload) is enough to use new plugin version after running "yarn plugin"
 
 ## Remove plugin
 You could unisntall plugin from DbGate plugins widget. Or using following command:

@@ -20,16 +20,16 @@ Several common fields:
 
 * Server - host name of database server
 * Port - port, in case of database default port, you could leave it empty
-* User, Password - authentization
+* User, Password - authentication
 * Password mode
     * Save and encrypt - password is saved in encrypted way, you could not see it next time
     * Save RAW - password is saved as is (without encrypting), you could check it later
-    * Don't save, ask for password - password is not saved, you have to enter password in time of conecting
-    * Don't save, ask for login and password - password nor login is not saved, you have to enter both in time of conecting
+    * Don't save, ask for password - password is not saved, you have to enter it when connecting
+    * Don't save, ask for login and password - neither password nor login is saved, you have to enter both when connecting
 * Is read only - Connection will be read only (for engines without support readonly sessions, you could not execute SQL queries in this case)
 * Default database - which database will be active after connection
-* Use only datababase XXX - if checked, in connection tree will appear only this database
-* Display name - name, under which connnection will appeat in application
+* Use only database *&lt;default database&gt;* - if checked, only the default database appears in the connection tree (other databases on the server are hidden)
+* Display name - name, under which the connection will appear in the application
 
 ## SSH Tunnel
 You could configure connection over SSH tunnel here. 

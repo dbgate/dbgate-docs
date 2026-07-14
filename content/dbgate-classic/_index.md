@@ -52,15 +52,16 @@ DbGate Classic comes in three editions:
 
 | Edition | Distribution | Notable features |
 |---|---|---|
-| Community | Desktop app, or self-hosted web (Docker/NPM), free | Connect and browse/edit standard SQL and NoSQL databases |
-| Premium | Desktop app, or self-hosted web (Docker/NPM/AWS/Azure) | Adds API connections (GraphQL/oData/OpenAPI), backup & restore, DB model deploy/compare, extra database engines (libSQL, CosmosDB, Amazon Redshift, Firestore, Amazon DynamoDB) |
-| Team Premium | Self-hosted web (Docker/NPM/AWS/Azure) | Multi-user: storage database for settings, Administration UI, users/roles/permissions |
+| Community | Desktop app, or self-hosted web (Docker/NPM), free | Connect and browse/edit standard SQL and NoSQL databases, Redis GUI, up to 5 DbGate Cloud connections/files |
+| Premium | Desktop app (single user) | Everything in Community, plus [query designer](sql-and-queries/query-designer), [charts](working-with-data/charts), [editable query results & views](sql-and-queries/sql-editor), [master/detail views](working-with-data/data-browser), [AI tools](working-with-data/ai-features) (DB chat, explain error, theme assistant), compare & deploy DB models, advanced/batch export-import, [data deployer](working-with-data/advanced-data-tools/data-deployer), [API connections](developer/api-connections) (GraphQL/oData/OpenAPI), extra database engines (libSQL, CosmosDB, Amazon Redshift, Firestore, Amazon DynamoDB), unlimited DbGate Cloud storage |
+| Team Premium | Desktop app + self-hosted web (Docker/NPM/AWS/Azure) | Everything in Premium, plus web application, [Administration UI](admin), users/roles/permissions, external identity providers (OAuth/OIDC), zero-config native backup & restore |
 
 ## In this section
 
 * [Getting Started](getting-started) - install DbGate and connect to your first database
-* [Working with Data](working-with-data) - filter, chart, map, export and archive data
-* [Database Operations](database-operations) - deploy database models, back up and restore
+* [Working with Data](working-with-data) - browse, edit, filter, chart, map, export and archive data
+* [SQL & Queries](sql-and-queries) - SQL editor, visual query designer and ER diagrams
+* [Database Operations](database-operations) - edit schema, compare and deploy models, back up and restore
 * [Customization](customization) - configure appearance and runtime settings
 * [Administration](admin) - manage users, roles and permissions (Team Premium)
 * [Developer & Automation](developer) - scripts, API connections and plugins

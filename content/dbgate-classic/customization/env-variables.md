@@ -58,8 +58,8 @@ The following variables are available in both Community and Premium edition. How
 * TOKEN_LIFETIME - lifetime of access token. After this time, logged user will be redirected to login page. Default is 1d (means 1 day). Possible are values like 3h (3 hours), 10m (10 minutes), 2d (2 days)
 * SINGLE_CONNECTION - connection id. If defined, only this connection will be available (must be used with SINGLE_DATABASE)
 * SINGLE_DATABASE - database name, only this database will be available. (must be used with SINGLE_CONNECTION)
-* BASIC_AUTH - if true or 1 , basic authentization of both web and API is used. Otherwise, login form and JWT token base API authentization is used. Basic authentization cannot be used for OAuth authentization.
-* SKIP_ALL_AUTH - if true or 1, all authentization is skipped
+* BASIC_AUTH - if true or 1 , basic authentication of both web and API is used. Otherwise, login form and JWT token base API authentication is used. Basic authentication cannot be used for OAuth authentication.
+* SKIP_ALL_AUTH - if true or 1, all authentication is skipped
 * ALLOW_DBGATE_PRIVATE_CLOUD - by default, DbGate cloud is disabled for web version. Using this variable, you could enable it
 * REDIRECT_TO_DBGATE_CLOUD_LOGIN - in web version, redirect to DbGate cloud login, instead of opening new window
 * LANGUAGE - UI language, eg. en, cs, de, fr, etc. See language configuration table below. Set "auto" to use browser language
@@ -90,7 +90,7 @@ The following variables are available in both Community and Premium edition. How
 * OAUTH_LOGOUT - logout URL of OAuth provider. User will be redirected to this URL when he requests logging out
 * OAUTH_CLIENT_ID - client ID
 * OAUTH_CLIENT_SECRET - client secret
-* OAUTH_LOGIN_FIELD - field name from payload, which holds login name. For availabe fields, you could inspect dbgate log, payload sent from OAuth provider are logged to console. This login name is used eg. for configuring permissions. It is not neccessary login entered in OAuth. If not specified, all users from OAuth provider will have the same login name.
+* OAUTH_LOGIN_FIELD - field name from payload, which holds login name. For available fields, you could inspect dbgate log, payload sent from OAuth provider are logged to console. This login name is used eg. for configuring permissions. It is not necessarily the login entered in OAuth. If not specified, all users from OAuth provider will have the same login name.
 * OAUTH_ALLOWED_LOGINS - comma separator login names, which will be allowed to login. If not specified, all logins will be allowed to use DbGate app.
 * OAUTH_SCOPE - scope, which is sent to OAuth authorize and token endpoint
 * OAUTH_GROUP_FIELD - field in payload from OAuth which denotes group
@@ -153,14 +153,14 @@ You could configure connection list with env variables, than "Add connection: en
 * SSL_TRUST_CERTIFICATE_[connection id] - set value 1 or true for setting trustServerCertificate MSSQL option
 * SETTINGS_[settings key] - preconfigure settings value. Setting key could be listed from source codes, https://github.com/dbgate/dbgate/blob/master/packages/web/src/settings/
 * SOCKET_PATH_[connection id] - path to socket file, if connecting via socket
-* AUTH_TYPE_[connection id] - authentization type
+* AUTH_TYPE_[connection id] - authentication type
   * hostPort (default)
   * socket - value is set implicitly, when settings SOCKET_PATH
-  * tedious - default portable authentization for MS SQL, using tedious driver
-  * sspi - Windows integrated authentization (Windows only, MS SQL), using native MSSQL driver
-  * sql - SQL authentization (Windows only, MS SQL), using native MSSQL driver
-* ALLOWED_DATABASES_[connection id] - allowed database names for specified connnection, pipe ("|") delimited
-* ALLOWED_DATABASES_REGEX_[connection id] - regular expression for allowed database names for specified connnection
+  * tedious - default portable authentication for MS SQL, using tedious driver
+  * sspi - Windows integrated authentication (Windows only, MS SQL), using native MSSQL driver
+  * sql - SQL authentication (Windows only, MS SQL), using native MSSQL driver
+* ALLOWED_DATABASES_[connection id] - allowed database names for specified connection, pipe ("|") delimited
+* ALLOWED_DATABASES_REGEX_[connection id] - regular expression for allowed database names for specified connection
 * USE_SEPARATE_SCHEMAS_[connection id] - set value 1 or true for load schemas separately. Use this if you have large schemas.
 * LOCAL_DATA_CENTER_[connection id] - local data center (for Apache Cassandra)
 * CONNECTION_[connection id]_parameterName - set engine-specific parameter name

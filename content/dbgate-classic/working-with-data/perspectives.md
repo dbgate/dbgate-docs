@@ -5,7 +5,7 @@ aliases:
   - /perspectives/
 ---
 
-Perspective is readonly view of complex nested data. It resembles reports, but perspectives are created simply by adding data to view. You could use perspective desigher, which allows you to join data following other relations than foreign keys.
+Perspective is readonly view of complex nested data. It resembles reports, but perspectives are created simply by adding data to view. You could use perspective designer, which allows you to join data following other relations than foreign keys.
 
 Perspectives can easily join data together, and show groups.
 
@@ -17,12 +17,12 @@ Use context menu of table/view, "Open perspective".
 
 ![screenshot](/img/perspective-create.png)
 
-DbGate opens simple perspective, with only one column displayed. This column is choosed by heuristic algorithm, to be the best representation of the whole row.
+DbGate opens simple perspective, with only one column displayed. This column is chosen by heuristic algorithm, to be the best representation of the whole row.
 ## Customize perspective
 You could define, which columns are available in view. Also you could add referenced data to view. Use expand button for browsing references tree.
 
 ## Filtering data
-Use context menu in table or in column list on the left side, "Add to filter". You could use the same filter expressions, as in other places in DbGate. Or you can use context menu cokmmand "Filter this value" on table cell.
+Use context menu in table or in column list on the left side, "Add to filter". You could use the same filter expressions, as in other places in DbGate. Or you can use context menu command "Filter this value" on table cell.
 
 ## Filter parent rows
 Assume following perspective. We have master/detail relation, Genre, with related tracks. We want to filter by Track (i tried to search "mix" text). 

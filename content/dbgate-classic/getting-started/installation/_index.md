@@ -5,7 +5,7 @@ aliases:
   - /installation/
 ---
 
-DbGate is available for various platforms, installation process is dependend on platform.
+DbGate is available for various platforms, installation process is dependent on platform.
 
 ## Windows
 Windows supports msi installer and portable ZIP installation. Autoupdater is supported for MSI installer.
@@ -17,7 +17,7 @@ Linux supports snap packages and AppImage distribution. Both supports autoupdate
 For Mac, DMG installer is available. There are 3 packages available:
   - Apple (arm64) for new Apple M1, M2, M3, M4 processor
   - Intel (x86) - for old x86 processors
-  - Apple+Intel - both packages in onw installer
+  - Apple+Intel - both packages in one installer
 
 
 ## Docker 

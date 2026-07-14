@@ -7,8 +7,8 @@ Common documentation is in README.md, keep this documentation up-to-date.
 
 `.claude/settings.json` grants read-only access to sibling repositories that are the source of knowledge for DbGate itself (write/edit is explicitly denied on all of them). Use them for context when writing or updating docs content (features, config options, terminology, changelog entries, etc.):
 
-- `../dbgate` — main DbGate application source
-- `../dbgate-merged` — merged/combined DbGate source variant
+- `../dbgate` — main DbGate Community application source (some features for Premium/Team Premium are only in `../dbgate-merged`)
+- `../dbgate-merged` — main DbGate Premium/Team Premium application source (use this for complete context on features, config options, and changelog entries)
 - `../dbgate-lite` — lite edition of DbGate (Solid.js, browser-based)
 - `../web-dbgate-io` — dbgate.io marketing site source
 

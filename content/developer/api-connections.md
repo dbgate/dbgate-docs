@@ -1,11 +1,15 @@
 ---
 title: API Connections
-weight: 90
+weight: 10
+aliases:
+  - /api-connections/
 ---
 
 DbGate supports connections to REST APIs, GraphQL services, and OData endpoints. These API connections use the same interface patterns as database connections, allowing you to work with APIs and databases in a unified environment.
 
 API connection support is available in DbGate Premium.
+
+> Looking for API browsing without the desktop app? [DbGate Central](/dbgate-products/dbgate-central/connecting-to-api-endpoints/) is a separate, hosted implementation of GraphQL/oData/Shopify connections, reimplemented from the ground up for the browser.
 
 ## GraphQL
 

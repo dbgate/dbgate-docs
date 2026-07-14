@@ -1,6 +1,8 @@
 ---
 title: Export & import
 weight: 20
+aliases:
+  - /export-import/
 ---
 
 DbGate has flexible export/import system allowing both simple one-click exports or complex custom setup.
@@ -34,7 +36,7 @@ Advanced export/import could be invoked from:
   * File (JSON, CSV, DBF...) - then you configure "Import"
     * Open or drag & drop source file
   * Query - in most cases, you will not need this, but you could type query directly here. This option is internally used, when you are exporting eg. filtered table data.
-  * Archive - import/export data from [data archive](archives)
+  * Archive - import/export data from [data archive](advanced-data-tools/archives)
 
 ### {{<mdi "export" >}} Target configuration
 * Storage type - the same as for source configuration, but with opposite meaning

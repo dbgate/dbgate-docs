@@ -27,7 +27,7 @@ There is no lint, test, or typecheck command in this repo — it's Markdown cont
 
 ## Project structure
 
-- **`content/`** — all documentation pages, one Markdown file per page. Directories (`admin/`, `data-tools/`, `installation/`) become site sections and each needs an `_index.md` for the section landing page. Ordering within the left nav is controlled by the `weight` front matter field (lower = earlier), not by filename or directory order.
+- **`content/`** — all documentation pages, one Markdown file per page. Top-level directories (`dbgate-products/`, `getting-started/`, `working-with-data/`, `database-operations/`, `customization/`, `admin/`, `developer/`) are the site's nav categories; each needs an `_index.md` for the section landing page, and can nest further sections (e.g. `getting-started/installation/`, `dbgate-products/dbgate-central/`). Ordering within the left nav is controlled by the `weight` front matter field (lower = earlier), not by filename or directory order. Pages moved between categories carry an `aliases:` front matter entry pointing at their old URL, so existing links keep working.
 - **`layouts/`** — thin overrides/additions on top of the `hugo-theme-relearn` submodule theme:
   - `layouts/partials/` overrides theme partials (`custom-header.html`, `favicon.html`, `logo.html`).
   - `layouts/shortcodes/` defines custom Hugo shortcodes used throughout `content/`: `{{< mdi "icon-name" >}}` (Material Design Icons), `{{< check >}}` (checkmark, used in the database support matrix), `{{< center >}}` (centers content, e.g. table headers).

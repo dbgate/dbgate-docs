@@ -1,6 +1,8 @@
 ---
 title: Plugin development
-weight: 100
+weight: 30
+aliases:
+  - /plugin-development/
 ---
 
 DbGate supports creating plugins. Thanks plugin to wizard, it is really simple to create masic plugin. DbGate plugins are NPM (JavaScript) packages, they can have dependencies. (but not native dependencies)

@@ -1,6 +1,8 @@
 ---
 title: SQL Front Matter
-weight: 205
+weight: 50
+aliases:
+  - /sql-front-matter/
 ---
 
 SQL front matter is metadata in YAML format at the beginning of SQL file. This concept is inspired by gohugo and Jekyll, which introduced front matter for markdown files. ([Front matter in Hugo](https://gohugo.io/content-management/front-matter/))

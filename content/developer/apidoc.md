@@ -1,7 +1,9 @@
 ---
 layout: docs
 title: API documentation
-weight: 210
+weight: 20
+aliases:
+  - /apidoc/
 ---
 
 ## Functions

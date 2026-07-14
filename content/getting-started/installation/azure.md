@@ -1,6 +1,8 @@
 ---
 title: Deploy on Azure
 weight: 20
+aliases:
+  - /installation/azure/
 ---
 
 DbGate Azure edition is a collaborative, multi-user web platform specifically designed for database management within Azure. By taking advantage of Azure infrastructure, it streamlines teamwork for organizations operating in cloud environments. Its shared, browser-based interface simplifies collaboration, data access, and database oversight while seamlessly integrating with Azure.

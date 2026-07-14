@@ -1,6 +1,8 @@
 ---
 title: Perspectives
-weight: 90
+weight: 50
+aliases:
+  - /perspectives/
 ---
 
 Perspective is readonly view of complex nested data. It resembles reports, but perspectives are created simply by adding data to view. You could use perspective desigher, which allows you to join data following other relations than foreign keys.

@@ -1,6 +1,8 @@
 ---
 title: Data archives
 weight: 1
+aliases:
+  - /data-tools/archives/
 ---
 
 Archives are folders with data in JSONL (NDJSON) format. DbGate allows work with them very efficiently, you could import them into database, export them to other formats or directly edit data in archive. Archive behaves as a very fast and lighweight database stored in local files.

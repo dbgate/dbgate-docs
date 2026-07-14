@@ -1,6 +1,8 @@
 ---
 title: Advanced data tools
-weight: 40
+weight: 60
+aliases:
+  - /data-tools/
 ---
 
 DbGate offers several advanced data tools suitable for specific scenarios:

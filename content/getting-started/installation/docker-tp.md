@@ -1,6 +1,8 @@
 ---
 title: Team Premium on Docker
 weight: 30
+aliases:
+  - /installation/docker-tp/
 ---
 
 Typical Team Premium installation consists of two components: 
@@ -16,7 +18,7 @@ docker pull dbgate/dbgate-premium
 DbGate Team Premium container requires some environment variables to be set:
 - `STORAGE_SERVER`, `STORAGE_DATABASE`, `STORAGE_USER`, `STORAGE_PASSWORD`, `STORAGE_ENGINE` - defines connection to internal storage database
 
-See [environment variables documentation](/env-variables/#team-premium-edition-configuration) for more details about available environment variables.
+See [environment variables documentation](/customization/env-variables/#team-premium-edition-configuration) for more details about available environment variables.
 
 ## Resource Requirements
 

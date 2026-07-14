@@ -1,6 +1,8 @@
 ---
 title: Custom themes
-weight: 75
+weight: 10
+aliases:
+  - /custom-themes/
 ---
 
 DbGate has flexible theming support. You could create your own theme, changing colors of various UI elements.

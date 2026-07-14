@@ -6,6 +6,8 @@ title: DbGate documentation
 
 DbGate is database manager, allowing to connect and work with supported databases. It is both desktop app and web app. It's designed to by fast and easy to use.
 
+DbGate also ships as browser-based and hosted products for working with APIs and Shopify stores - see [DbGate Products](/dbgate-products/) to find the right one for you.
+
 ![DbGate screenshot](https://media.dbgate.io/img/common-data-browser-light.png)
 
 ## Supported databases

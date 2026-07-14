@@ -1,6 +1,8 @@
 ---
 title: Charts
-weight: 85
+weight: 30
+aliases:
+  - /charts/
 ---
 
 With DbGate, you could use chart for visualization of your SQL queries. Simply execute query, in chart is auto-detected, the tab "Chart 1"  will appear. If you have more query results, there could be more charts.
@@ -27,4 +29,4 @@ Use {{< mdi "pencil" >}} Customize button for invoking chart settings. You could
 When you change any option in chart settings, it is saved at the beginning of the SQL script as front-matter.
 
 ## Manually editing chart definition
-Some options are not available in editor, but they could be edited in SQL code. Please read [SQL front matter](/sql-front-matter) for more info
+Some options are not available in editor, but they could be edited in SQL code. Please read [SQL front matter](/developer/sql-front-matter) for more info

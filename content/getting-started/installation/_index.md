@@ -1,6 +1,8 @@
 ---
 title: Installation
 weight: 10
+aliases:
+  - /installation/
 ---
 
 DbGate is available for various platforms, installation process is dependend on platform.

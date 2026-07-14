@@ -1,6 +1,8 @@
 ---
 title: Data deployer
 weight: 2
+aliases:
+  - /data-tools/data-deployer/
 ---
 
 With data deployer, you could visually compare and sycnhronize your data in **archive folders** with **real database**

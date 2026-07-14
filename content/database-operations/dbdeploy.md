@@ -1,6 +1,8 @@
 ---
 title: Database deploy
-weight: 70
+weight: 10
+aliases:
+  - /dbdeploy/
 ---
 
 *Deploy functionality will be significantly changed in incoming release, this documentation is related to lastest BETA version*

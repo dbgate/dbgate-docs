@@ -1,6 +1,8 @@
 ---
 title: Connection
-weight: 15
+weight: 20
+aliases:
+  - /connection/
 ---
 
 Connecting to your database from DbGate is easy. You can connect to a database in a few different ways:

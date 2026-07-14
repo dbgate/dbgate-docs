@@ -1,6 +1,8 @@
 ---
 title: Data replicator
 weight: 3
+aliases:
+  - /data-tools/data-replicator/
 ---
 
 Data replicator could synchronize your data in NDJSON files (data archives) with real database. It preserves relationships. Synchronization is one-way, from data archive data  into database.

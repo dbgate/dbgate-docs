@@ -1,6 +1,8 @@
 ---
 title: Web app config samples
-weight: 100
+weight: 30
+aliases:
+  - /web-app-config/
 ---
 
 There are lot of configuration layouts, which could be achieved with environment variables configuration.

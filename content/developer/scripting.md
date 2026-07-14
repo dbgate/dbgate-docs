@@ -1,6 +1,8 @@
 ---
 title: Scripting
-weight: 200
+weight: 40
+aliases:
+  - /scripting/
 ---
 
 DbGate consists of several [NPM packages](https://www.npmjs.com/search?q=keywords%3Adbgate), which could be used in nodejs scripts
@@ -10,7 +12,7 @@ Typically you will need these packages:
 * dbgate-plugin-`engine` - set of connector plugins, implements connection to database and operations specific to given database engine
 * dbgate-plugin-`fileformat` - if you use export to CSV or XML, these format providers are implemented as external plugins
 
-[Documentation of API](/apidoc)
+[Documentation of API](/developer/apidoc)
 
 ## Generating script from DbGate
 Lot of DbGate features are internally implemented with scripting interface. So when you are using some export-like operation, there is somewhere "Generate Shell script" button, which generates nodejs script for you.

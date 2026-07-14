@@ -12,7 +12,7 @@ Typically you will need these packages:
 * dbgate-plugin-`engine` - set of connector plugins, implements connection to database and operations specific to given database engine
 * dbgate-plugin-`fileformat` - if you use export to CSV or XML, these format providers are implemented as external plugins
 
-[Documentation of API](/developer/apidoc)
+[Documentation of API](/dbgate-classic/developer/apidoc)
 
 ## Generating script from DbGate
 Lot of DbGate features are internally implemented with scripting interface. So when you are using some export-like operation, there is somewhere "Generate Shell script" button, which generates nodejs script for you.

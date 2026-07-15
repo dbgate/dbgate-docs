@@ -1,9 +1,29 @@
 baseURL = 'https://dbgate.io/'
-languageCode = 'en-us'
 title = 'DbGate'
 disableKinds = ["taxonomy"]
 enableRobotsTXT = true
 theme = "hugo-theme-relearn"
+
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+enableMissingTranslationPlaceholders = false
+
+# Only languages with actually translated content belong here. A language whose
+# contentDir is empty falls back to English, publishing untranslated duplicates
+# under its prefix and adding a dead entry to the switcher.
+# Remaining targets, to add as each is translated (weights reserved to match
+# web-dbgate-io): de 30, fr 40, es 50, sk 60, zh 70, pt 80, it 90, ja 100, ko 110.
+[languages]
+  [languages.en]
+    languageName = 'English'
+    languageCode = 'en-us'
+    weight = 10
+    contentDir = 'content/en'
+  [languages.cs]
+    languageName = 'Česky'
+    languageCode = 'cs'
+    weight = 20
+    contentDir = 'content/cs'
 
 [module]
   [module.hugoVersion]

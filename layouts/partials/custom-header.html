@@ -1,1 +1,13 @@
 <link rel="stylesheet" href="/mdi/css/materialdesignicons.css">
+{{- /* The relearn theme emits no hreflang, so translations would not be linked as
+       alternates for search engines. .AllTranslations includes the current page, so
+       every language of this page (and only the ones that exist) is listed.
+       x-default points at English, matching defaultContentLanguage in hugo.toml. */ -}}
+{{- if hugo.IsMultilingual }}
+  {{- range .AllTranslations }}
+<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+    {{- if eq .Language.Lang "en" }}
+<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
+    {{- end }}
+  {{- end }}
+{{- end }}

@@ -1,5 +1,5 @@
 ---
-title: DbGate Classic
+title: DbGate
 weight: 5
 ---
 
@@ -7,7 +7,7 @@ weight: 5
 
 DbGate is database manager, allowing to connect and work with supported databases. It is both desktop app and web app. It's designed to by fast and easy to use.
 
-DbGate Classic is the original DbGate application. For the browser-based and hosted products (DbGate Lite, Central and the Shopify App), see the [products overview](/).
+For the browser-based and hosted products (DbGate Lite, Central and the Shopify App), see the [products overview](/).
 
 ![DbGate screenshot](https://media.dbgate.io/img/common-data-browser-light.png)
 
@@ -48,7 +48,7 @@ DbGate Classic is the original DbGate application. For the browser-based and hos
 
 ## Editions
 
-DbGate Classic comes in three editions:
+DbGate comes in three editions:
 
 | Edition | Distribution | Notable features |
 |---|---|---|

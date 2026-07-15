@@ -56,7 +56,7 @@ Grayed scripts denotes scripts, which are not compatible with currently selected
 
 If you would like to enhance knowledge base with your SQL scripts, please create pull request into [dbgate-knowledge-base](https://github.com/dbgate/dbgate-knowledge-base) GIT repository.
 
-Scripts in knowledge base are annotated with [SQL front matter](/dbgate-classic/developer/sql-front-matter) syntax
+Scripts in knowledge base are annotated with [SQL front matter](/dbgate/developer/sql-front-matter) syntax
 
 ![DbGate screenshot](https://media.dbgate.io/img/public-knowledge-base-tables-sizes-light.png)
 

@@ -18,6 +18,6 @@ DbGate Central introspects the GraphQL schema as soon as you connect. Browse the
 
 Queried views are cached per connection, so reopening them is instant while you keep working.
 
-> GraphQL connections in DbGate Central are a separate, browser-based implementation from the [desktop GraphQL feature](/dbgate-classic/developer/api-connections/#graphql) - see that page if you are using the desktop app instead.
+> GraphQL connections in DbGate Central are a separate, browser-based implementation from the [desktop GraphQL feature](/dbgate/developer/api-connections/#graphql) - see that page if you are using the desktop app instead.
 
 ![DbGate Central - query a GraphQL API](https://lite.dbgate.io/screenshots/central-graphql-dark.png)

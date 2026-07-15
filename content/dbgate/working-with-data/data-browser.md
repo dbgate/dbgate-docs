@@ -55,4 +55,4 @@ Apply grouping (`GROUP BY`) in the grid view to aggregate rows directly while br
 * [Data filtering](data-filtering) - filter expression syntax
 * [Export & import](export-import) - move data in and out of tables
 * [Perspectives](perspectives) - nested, read-only views over complex related data
-* [SQL editor](/dbgate-classic/sql-and-queries/sql-editor/) - edit query results in the same way *(Premium)*
+* [SQL editor](/dbgate/sql-and-queries/sql-editor/) - edit query results in the same way *(Premium)*

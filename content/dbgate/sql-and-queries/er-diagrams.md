@@ -22,4 +22,4 @@ ER (entity-relationship) diagrams visualize your tables and the relations betwee
 
 Export the diagram to a simple, self-contained HTML page to share it or include it in documentation.
 
-Diagrams are stored like other DbGate objects and can be shared through [DbGate Cloud](/dbgate-classic/dbgate-cloud/) folders.
+Diagrams are stored like other DbGate objects and can be shared through [DbGate Cloud](/dbgate/dbgate-cloud/) folders.

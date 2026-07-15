@@ -5,9 +5,9 @@ weight: 60
 
 The administration interface lets a team run DbGate as a shared, multi-user web application: you manage connections centrally, define who can sign in and how, and grant fine-grained access to databases and objects through users, roles and permissions. It also hosts shared team files. Everything configured here is stored in the storage database rather than in local files.
 
-The administration tool is available only on the Team Premium edition. In the Community edition, please configure DbGate using [environment variables](/dbgate-classic/customization/env-variables) instead.
+The administration tool is available only on the Team Premium edition. In the Community edition, please configure DbGate using [environment variables](/dbgate/customization/env-variables) instead.
 
-All configuration from administration is saved into the storage database - use the [STORAGE_xxx environment variables](/dbgate-classic/customization/env-variables/#team-premium-edition-configuration) to configure it.
+All configuration from administration is saved into the storage database - use the [STORAGE_xxx environment variables](/dbgate/customization/env-variables/#team-premium-edition-configuration) to configure it.
 
 In this section:
 

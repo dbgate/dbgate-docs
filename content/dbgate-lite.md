@@ -40,5 +40,5 @@ DbGate Lite is best for learning and one-off tasks. For ongoing, professional wo
 
 * **DbGate Lite** - free, in-browser. Best for learning SQL and ad-hoc data files.
 * **[DbGate Central](../dbgate-central/)** - hosted product for working with APIs: connect to live GraphQL, oData and Shopify endpoints, keep connections and reports in a workspace, and share them with your team.
-* **[DbGate Premium](/dbgate-classic/getting-started/installation/)** - an edition of [DbGate Classic](/dbgate-classic/): the full desktop application for working with databases, connect to SQL and NoSQL servers with the complete set of professional tools.
-* **[DbGate Team Premium](/dbgate-classic/getting-started/installation/docker-tp/)** - another edition of [DbGate Classic](/dbgate-classic/), for teams: a shared web interface that runs on-premise, so your whole team works with databases from the browser on your own infrastructure.
+* **[DbGate Premium](/dbgate/getting-started/installation/)** - an edition of [DbGate](/dbgate/): the full desktop application for working with databases, connect to SQL and NoSQL servers with the complete set of professional tools.
+* **[DbGate Team Premium](/dbgate/getting-started/installation/docker-tp/)** - another edition of [DbGate](/dbgate/), for teams: a shared web interface that runs on-premise, so your whole team works with databases from the browser on your own infrastructure.

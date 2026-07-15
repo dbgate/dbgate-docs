@@ -29,7 +29,7 @@ If a suggested query fails, DbGate sends the error back to the model, which usua
 
 ## SQL AI assistant
 
-Use the chat as a SQL assistant - "Write a SQL query for the top 10 customers by sales" - and open the result in a [SQL editor](/dbgate-classic/sql-and-queries/sql-editor/) tab.
+Use the chat as a SQL assistant - "Write a SQL query for the top 10 customers by sales" - and open the result in a [SQL editor](/dbgate/sql-and-queries/sql-editor/) tab.
 
 ## Explain SQL error
 
@@ -39,7 +39,7 @@ Click **Explain** next to an error message to get an AI explanation of what went
 
 ## Theme AI assistant
 
-The AI can also generate custom color themes - see [Custom themes](/dbgate-classic/customization/custom-themes/).
+The AI can also generate custom color themes - see [Custom themes](/dbgate/customization/custom-themes/).
 
 ## Disabling AI features
 

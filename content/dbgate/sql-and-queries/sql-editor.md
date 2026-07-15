@@ -23,11 +23,11 @@ The SQL editor is where you write and run SQL scripts against your connection. O
 
 ## Working with results
 
-The result grid uses the same engine as the [data browser](/dbgate-classic/working-with-data/data-browser/), so you can [filter and sort](/dbgate-classic/working-with-data/data-filtering/), copy cells in various formats and [export](/dbgate-classic/working-with-data/export-import/) the result.
+The result grid uses the same engine as the [data browser](/dbgate/working-with-data/data-browser/), so you can [filter and sort](/dbgate/working-with-data/data-filtering/), copy cells in various formats and [export](/dbgate/working-with-data/export-import/) the result.
 
 ### Edit query results & views *(Premium)*
 
-Query results are editable when DbGate can map the result back to a single table or an updatable view. Edit cells directly in the result grid, review the generated change script and save it back to the database - the same staged-changes workflow as in the [data browser](/dbgate-classic/working-with-data/data-browser/). Editing views is supported as well.
+Query results are editable when DbGate can map the result back to a single table or an updatable view. Edit cells directly in the result grid, review the generated change script and save it back to the database - the same staged-changes workflow as in the [data browser](/dbgate/working-with-data/data-browser/). Editing views is supported as well.
 
 > Editable query results and editable views were introduced in DbGate 7.2.
 

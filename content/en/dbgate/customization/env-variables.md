@@ -45,6 +45,72 @@ These variables are available only in Team Premium edition.
   * STORAGE_SSL_REJECT_UNAUTHORIZED - set value 1 or true if reject unauthorized connections
   * STORAGE_SSL_TRUST_SERVER_CERTIFICATE - set value 1 or true for setting trustServerCertificate MSSQL option
 
+### Roles configuration (Team Premium)
+Roles and their permissions can be defined with env variables, as an alternative to the [Roles tab](/admin/roles) in administration. They are written into the storage database each time DbGate starts (STORAGE_DATABASE must be defined). Roles and permissions created this way are kept in sync with the env variables: when you remove a variable, the corresponding permission is removed on the next start. Roles and permissions created in the administration UI are not affected.
+
+In following options, [role] is the role name. [rule id] is any identifier you choose, it only groups the variables of one permission rule together (eg. `1`, `sales`, `reports`). [connection id] is ID from the CONNECTIONS list (see [Connections configuration](#connections-configuration)).
+
+* ROLE_[role]_NAME - role name, if it can't be used directly in variable name (eg. it contains dashes, dots or @, like OAuth group `team-a@company.com`). In this case, [role] in other variables is only a key, eg. `ROLE_TEAMA_NAME=team-a@company.com` and `ROLE_TEAMA_PERMISSIONS=...`
+* ROLE_[role]_PERMISSIONS - list of comma separated permissions. See [permission list](#permission-list)
+* ROLE_[role]_CONNECTIONS - list of comma separated connection IDs available for this role
+
+#### Team folder permissions
+* ROLE_[role]\_TEAM_FOLDERS_[rule id]\_FOLDER - name of the [team folder](/admin/team-files). Use `default` for the default team folder. If a folder with given name doesn't exist, it is created.
+* ROLE_[role]\_TEAM_FOLDERS_[rule id]\_PERMISSIONS - list of comma separated permissions for the folder:
+  * read - read files in the folder
+  * write - create, change and delete files in the folder
+  * use - run files with [autoExecute](/sql-front-matter) without read access to their content
+
+#### Database permissions
+See also [database permissions](/admin/permissions#database-permissions).
+* ROLE_[role]\_DATABASES_[rule id]\_CONNECTION - connection ID
+* ROLE_[role]\_DATABASES_[rule id]\_DATABASES - database names, pipe ("|") delimited. If neither this nor the regex variable is set, the rule applies to all databases
+* ROLE_[role]\_DATABASES_[rule id]\_DATABASES_REGEX - regular expression for database names
+* ROLE_[role]\_DATABASES_[rule id]\_PERMISSION - one of: view, read_content, write_data, run_script, deny
+
+#### Table permissions
+See also [table permissions](/admin/permissions#table-permissions).
+* ROLE_[role]\_TABLES_[rule id]\_CONNECTION - connection ID
+* ROLE_[role]\_TABLES_[rule id]\_DATABASES - database names, pipe ("|") delimited
+* ROLE_[role]\_TABLES_[rule id]\_DATABASES_REGEX - regular expression for database names
+* ROLE_[role]\_TABLES_[rule id]\_SCHEMAS - schema name
+* ROLE_[role]\_TABLES_[rule id]\_SCHEMAS_REGEX - regular expression for schema names
+* ROLE_[role]\_TABLES_[rule id]\_TABLES - table names, pipe ("|") delimited
+* ROLE_[role]\_TABLES_[rule id]\_TABLES_REGEX - regular expression for table names
+* ROLE_[role]\_TABLES_[rule id]\_PERMISSION - one of: read, update_only, create_update_delete, run_script, deny
+* ROLE_[role]\_TABLES_[rule id]\_SCOPE - which objects the rule applies to, one of: all_objects (default), tables, views, tables_views_collections, procedures, functions, triggers, sql_objects, collections
+
+#### Example
+```
+CONNECTIONS=pg
+ENGINE_pg=postgres@dbgate-plugin-postgres
+SERVER_pg=dbserver
+USER_pg=postgres
+PASSWORD_pg=secret
+
+# role "analysts"
+ROLE_analysts_CONNECTIONS=pg
+ROLE_analysts_PERMISSIONS=widgets/*
+
+# read-only access to the default team folder
+ROLE_analysts_TEAM_FOLDERS_1_FOLDER=default
+ROLE_analysts_TEAM_FOLDERS_1_PERMISSIONS=read
+
+# full access to the "Reports" team folder
+ROLE_analysts_TEAM_FOLDERS_2_FOLDER=Reports
+ROLE_analysts_TEAM_FOLDERS_2_PERMISSIONS=read,write,use
+
+# read data in the "sales" and "crm" databases
+ROLE_analysts_DATABASES_1_CONNECTION=pg
+ROLE_analysts_DATABASES_1_DATABASES=sales|crm
+ROLE_analysts_DATABASES_1_PERMISSION=read_content
+
+# role with name that can't be used in variable name
+ROLE_DEVS_NAME=dev-team@company.com
+ROLE_DEVS_TEAM_FOLDERS_1_FOLDER=Dev scripts
+ROLE_DEVS_TEAM_FOLDERS_1_PERMISSIONS=read,write
+```
+
 The following variables are available in both Community and Premium edition. However, in Premium edition, prefered way is to use storage database and use administration UI for configuration.
 
 ## Web & permission configuration

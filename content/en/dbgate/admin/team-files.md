@@ -15,3 +15,6 @@ Team files are SQL, diagram or other files stored in DbGate internal storage. De
 
 ## Save SQL file as team file
 When saving SQL file, just check "Save to team folder" checkbox. The file will be saved as team file. 
+
+## Team folder permissions
+Access to team folders is configured per role in the [Roles tab](roles) (Team files). It can be also configured with [environment variables](/env-variables#team-folder-permissions).
